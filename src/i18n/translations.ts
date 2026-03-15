@@ -9,7 +9,7 @@ export const translations: Translations = {
   // Hero
   'hero.title': { zh: '随时随地，畅享视频', en: 'Stream Videos, Anytime, Anywhere' },
   'hero.subtitle': {
-    zh: 'ChiTV 是一款基于 Flutter 构建的跨平台视频流媒体应用，支持 macOS、iOS 和 tvOS，为您带来极致的观看体验。',
+    zh: 'ChiTV 是一款基于 SwiftUI 构建的跨平台视频流媒体应用，支持 macOS、iOS 和 tvOS，为您带来极致的观看体验。',
     en: 'ChiTV is a cross-platform video streaming app built with SwiftUI, supporting macOS, iOS, and tvOS for the ultimate viewing experience.',
   },
   'hero.download': { zh: '立即下载', en: 'Download Now' },
@@ -133,8 +133,8 @@ export const translations: Translations = {
   },
   'about.story.title': { zh: '项目故事', en: 'Our Story' },
   'about.story.content': {
-    zh: 'ChiTV 诞生于对优质视频体验的追求。受 MoonTV 项目启发，我们使用 Flutter 框架从零构建了这款跨平台应用。我们相信，每个人都应该能在任何设备上享受流畅、高质量的视频内容，而不受平台限制。',
-    en: 'ChiTV was born from the pursuit of a premium video experience. Inspired by the MoonTV project, we built this cross-platform app from scratch using the Flutter framework. We believe everyone should enjoy smooth, high-quality video content on any device without platform restrictions.',
+    zh: 'ChiTV 诞生于对优质视频体验的追求。受 MoonTV 项目启发，我们使用 SwiftUI 框架从零构建了这款跨平台应用。我们相信，每个人都应该能在任何设备上享受流畅、高质量的视频内容，而不受平台限制。',
+    en: 'ChiTV was born from the pursuit of a premium video experience. Inspired by the MoonTV project, we built this cross-platform app from scratch using the SwiftUI framework. We believe everyone should enjoy smooth, high-quality video content on any device without platform restrictions.',
   },
   'about.vision.title': { zh: '我们的愿景', en: 'Our Vision' },
   'about.vision.content': {
