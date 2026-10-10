@@ -9,7 +9,7 @@
   --color-text-primary: #1A1A2E;
   --color-text-secondary: #64748B;
   --color-error: #E74C3C;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-sans: system-ui, -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
 }
 
 html {

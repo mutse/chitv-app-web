@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Play, Github } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
+import { GITHUB_URL } from '../config'
 
 export function Footer() {
   const { t } = useTranslation()
@@ -45,7 +46,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://github.com/user/chitv"
+                  href={GITHUB_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-text-secondary hover:text-primary transition-colors duration-300 inline-flex items-center gap-1.5"
