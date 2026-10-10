@@ -15,12 +15,12 @@ export function Features() {
 
   const techBadges = [
     { name: 'SwiftUI', color: 'bg-blue-500/10 text-blue-600' },
-    { name: 'HLS', color: 'bg-primary/10 text-primary' },
-    { name: 'Riverpod', color: 'bg-purple-500/10 text-purple-600' },
-    { name: 'Hive DB', color: 'bg-amber-500/10 text-amber-600' },
-    { name: 'Dio', color: 'bg-rose-500/10 text-rose-600' },
-    { name: 'Material 3', color: 'bg-green-500/10 text-green-600' },
-    { name: 'Video Player', color: 'bg-indigo-500/10 text-indigo-600' },
+    { name: 'AVPlayer', color: 'bg-primary/10 text-primary' },
+    { name: 'HLS', color: 'bg-purple-500/10 text-purple-600' },
+    { name: 'SwiftData', color: 'bg-amber-500/10 text-amber-600' },
+    { name: 'CloudKit', color: 'bg-rose-500/10 text-rose-600' },
+    { name: 'WidgetKit', color: 'bg-green-500/10 text-green-600' },
+    { name: 'TVMLKit', color: 'bg-indigo-500/10 text-indigo-600' },
   ]
 
   return (

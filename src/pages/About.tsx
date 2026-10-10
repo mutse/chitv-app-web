@@ -1,14 +1,15 @@
 import { Github, Mail, Code2, Database, Layers, Palette } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
+import { GITHUB_URL, CONTACT_EMAIL } from '../config'
 
 export function About() {
   const { t, locale } = useTranslation()
 
   const techStack = [
-    { icon: Code2, name: 'SwiftUI', desc: { zh: '跨平台 UI 框架', en: 'Cross-platform UI framework' } },
-    { icon: Layers, name: 'Riverpod', desc: { zh: '响应式状态管理', en: 'Reactive state management' } },
-    { icon: Database, name: 'Hive', desc: { zh: '轻量级本地数据库', en: 'Lightweight local database' } },
-    { icon: Palette, name: 'Material 3', desc: { zh: '现代化设计系统', en: 'Modern design system' } },
+    { icon: Code2, name: 'SwiftUI', desc: { zh: 'Apple 原生 UI 框架', en: 'Apple-native UI framework' } },
+    { icon: Layers, name: 'AVPlayer', desc: { zh: '流媒体播放引擎', en: 'Streaming playback engine' } },
+    { icon: Database, name: 'SwiftData', desc: { zh: '本地数据持久化', en: 'Local data persistence' } },
+    { icon: Palette, name: 'CloudKit', desc: { zh: '跨设备云端同步', en: 'Cross-device cloud sync' } },
   ]
 
   return (
@@ -65,7 +66,7 @@ export function About() {
           <p className="text-text-secondary text-lg mb-8">{t('about.contact.desc')}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://github.com/user/chitv"
+              href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-surface hover:bg-surface/80 border border-black/10 text-text-primary font-semibold px-6 py-3 rounded-lg transition-all duration-300"
@@ -74,7 +75,7 @@ export function About() {
               GitHub
             </a>
             <a
-              href="mailto:contact@chitv.app"
+              href={`mailto:${CONTACT_EMAIL}`}
               className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300"
             >
               <Mail className="w-5 h-5" />

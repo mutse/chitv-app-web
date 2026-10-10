@@ -79,8 +79,8 @@ export const translations: Translations = {
 
   'features.detail.bookmarks.title': { zh: '收藏管理', en: 'Bookmark Management' },
   'features.detail.bookmarks.desc': {
-    zh: '在视频详情页一键添加收藏，所有收藏视频以网格形式集中展示。支持长按删除收藏，使用 Hive 本地数据库持久化存储，即使应用重启数据也不会丢失。',
-    en: 'Add bookmarks with one tap from the video detail page. All bookmarked videos are displayed in a centralized grid. Long-press to remove bookmarks, with Hive local database for persistent storage that survives app restarts.',
+    zh: '在视频详情页一键添加收藏，所有收藏视频以网格形式集中展示。支持长按删除收藏，使用 SwiftData 本地持久化存储，即使应用重启数据也不会丢失。',
+    en: 'Add bookmarks with one tap from the video detail page. All bookmarked videos are displayed in a centralized grid. Long-press to remove bookmarks, with SwiftData local persistence that survives app restarts.',
   },
 
   'features.detail.history.title': { zh: '观看历史', en: 'Watch History' },
@@ -114,16 +114,9 @@ export const translations: Translations = {
     zh: '下载 ChiTV，开启您的视频之旅',
     en: 'Download ChiTV and start your video journey',
   },
-  'cta.android': { zh: 'Android 下载', en: 'Android' },
   'cta.ios': { zh: 'iOS 下载', en: 'iOS' },
   'cta.macos': { zh: 'macOS 下载', en: 'macOS' },
-
-  // App Preview
-  'preview.title': { zh: '应用预览', en: 'App Preview' },
-  'preview.subtitle': {
-    zh: '精美的界面设计，流畅的操作体验',
-    en: 'Beautiful interface design with smooth user experience',
-  },
+  'cta.tvos': { zh: 'tvOS 下载', en: 'tvOS' },
 
   // About
   'about.title': { zh: '关于 ChiTV', en: 'About ChiTV' },
@@ -151,7 +144,7 @@ export const translations: Translations = {
 
   // Footer
   'footer.desc': {
-    zh: '跨平台视频流媒体应用，支持 macOS、iOS 和 macOS。',
+    zh: '跨平台视频流媒体应用，支持 macOS、iOS 和 tvOS。',
     en: 'Cross-platform video streaming app for macOS, iOS, and tvOS.',
   },
   'footer.quickLinks': { zh: '快速链接', en: 'Quick Links' },
@@ -167,4 +160,13 @@ export const translations: Translations = {
   // Language
   'lang.zh': { zh: '中文', en: '中文' },
   'lang.en': { zh: 'English', en: 'English' },
+
+  // Accessibility
+  'a11y.toggleMenu': { zh: '切换菜单', en: 'Toggle menu' },
+  'a11y.switchLanguage': { zh: '切换语言', en: 'Switch language' },
+
+  // 404
+  'notfound.title': { zh: '页面未找到', en: 'Page Not Found' },
+  'notfound.desc': { zh: '抱歉，您访问的页面不存在或已被移动。', en: 'Sorry, the page you are looking for does not exist or has been moved.' },
+  'notfound.back': { zh: '返回首页', en: 'Back to Home' },
 }
