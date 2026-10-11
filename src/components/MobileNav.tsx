@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import { useTranslation } from '../i18n/useTranslation'
 import { LanguageSwitcher } from './LanguageSwitcher'
 
 interface MobileNavProps {
@@ -8,14 +9,25 @@ interface MobileNavProps {
 }
 
 export function MobileNav({ navLinks }: MobileNavProps) {
+  const { t } = useTranslation()
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    if (!open) return
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [open ])
 
   return (
     <div className="md:hidden">
       <button
         onClick={() => setOpen(!open)}
         className="p-2 text-text-secondary hover:text-text-primary transition-colors cursor-pointer"
-        aria-label="Toggle menu"
+        aria-label={t('a11y.toggleMenu')}
+        aria-expanded={open}
       >
         {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>

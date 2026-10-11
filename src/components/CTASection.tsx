@@ -1,17 +1,18 @@
-import { Download } from 'lucide-react'
+import { Download, Smartphone, Laptop, Tv } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
+import { DOWNLOAD_URLS } from '../config'
 
 export function CTASection() {
   const { t } = useTranslation()
 
   const platforms = [
-    { label: t('cta.ios'), icon: '🍎' },
-    { label: t('cta.macos'), icon: '💻' },
-    { label: 'tvOS', icon: '📺' },
+    { label: t('cta.ios'), icon: Smartphone, href: DOWNLOAD_URLS.ios },
+    { label: t('cta.macos'), icon: Laptop, href: DOWNLOAD_URLS.macos },
+    { label: t('cta.tvos'), icon: Tv, href: DOWNLOAD_URLS.tvos },
   ]
 
   return (
-    <section id="download" className="py-20">
+    <section id="download" className="py-20 scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-2xl">
           <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-90" />
@@ -20,14 +21,17 @@ export function CTASection() {
             <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">{t('cta.subtitle')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {platforms.map((platform) => (
-                <button
+                <a
                   key={platform.label}
-                  className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 backdrop-blur-sm cursor-pointer"
+                  href={platform.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 backdrop-blur-sm"
                 >
-                  <span className="text-lg">{platform.icon}</span>
+                  <platform.icon className="w-5 h-5" />
                   <Download className="w-4 h-4" />
                   {platform.label}
-                </button>
+                </a>
               ))}
             </div>
           </div>
