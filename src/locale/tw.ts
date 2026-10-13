@@ -99,4 +99,15 @@ export const tw: Record<string, string> = {
   'notfound.title': '頁面未找到',
   'notfound.desc': '抱歉，您訪問的頁面不存在或已被移動。',
   'notfound.back': '返回首頁',
+  // Meta（每頁 title / description）
+  'meta.home.title': 'ChiTV - 跨平台影片播放器',
+  'meta.home.desc': 'ChiTV 是一款基於 SwiftUI 構建的跨平台影片串流應用，支援 macOS、iOS 和 tvOS，為您帶來極致的觀看體驗。',
+  'meta.features.title': '產品特性 - ChiTV',
+  'meta.features.desc': '探索 ChiTV 的核心特性：跨平台支援、智慧搜尋、HLS 高清播放、收藏夾、觀看歷史與暗色主題。',
+  'meta.android.title': 'ChiTV 安卓版',
+  'meta.android.desc': 'ChiTV 安卓版基於 Flutter 構建，HLS 串流播放搭配 Material 3 設計，在安卓裝置上同樣流暢。',
+  'meta.about.title': '關於 ChiTV',
+  'meta.about.desc': '了解 ChiTV：基於 SwiftUI 構建的跨平台影片串流應用，讓每個人都能享受優質的影片內容。',
+  'meta.notfound.title': '頁面未找到 - ChiTV',
+  'meta.notfound.desc': '抱歉，您造訪的頁面不存在。返回 ChiTV 首頁繼續探索。',
 }

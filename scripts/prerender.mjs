@@ -18,33 +18,30 @@ const { render } = await import(join(root, 'dist-ssr', 'entry-prerender.js'))
 const SITE = 'https://chitv-app.mutse.top'
 const template = readFileSync(join(dist, 'index.html'), 'utf8')
 
+// 从 src/locale/zh.ts 解析中文 meta 文案，与客户端 PageMeta 共用同一数据源
+const zhSrc = readFileSync(join(root, 'src/locale/zh.ts'), 'utf8')
+const zhDict = Object.fromEntries(
+  [...zhSrc.matchAll(/^  '([\w.]+)': '((?:[^'\\]|\\.)*)',?$/gm)].map((m) => [m[1], m[2]])
+)
+
 const routes = {
-  '/': {
-    file: 'index.html',
-    title: 'ChiTV - 跨平台视频播放器',
-    desc: 'ChiTV - 跨平台视频播放器，支持 macOS、iOS、tvOS。随时随地，畅享视频。',
-  },
-  '/features': {
-    file: 'features/index.html',
-    title: '产品特性 - ChiTV',
-    desc: 'ChiTV 核心特性：跨平台支持、智能搜索、HLS 高清播放、收藏夹、观看历史、暗色主题。',
-  },
-  '/android': {
-    file: 'android/index.html',
-    title: 'ChiTV 安卓版',
-    desc: 'ChiTV 安卓版：基于 Flutter 构建，HLS 流媒体播放搭配 Material 3 设计，在安卓设备上同样流畅。',
-  },
-  '/about': {
-    file: 'about/index.html',
-    title: '关于 ChiTV',
-    desc: '关于 ChiTV：基于 SwiftUI 构建的跨平台视频流媒体应用，让每个人都能享受优质的视频内容。',
-  },
+  '/': { file: 'index.html', titleKey: 'meta.home.title', descKey: 'meta.home.desc' },
+  '/features': { file: 'features/index.html', titleKey: 'meta.features.title', descKey: 'meta.features.desc' },
+  '/android': { file: 'android/index.html', titleKey: 'meta.android.title', descKey: 'meta.android.desc' },
+  '/about': { file: 'about/index.html', titleKey: 'meta.about.title', descKey: 'meta.about.desc' },
 }
 
-for (const [url, { file, title, desc }] of Object.entries(routes)) {
+for (const [url, { file, titleKey, descKey }] of Object.entries(routes)) {
+  const title = zhDict[titleKey]
+  const desc = zhDict[descKey]
+  if (!title || !desc) throw new Error(`zh.ts 缺少 ${titleKey} / ${descKey}`)
   const appHtml = render(url)
   if (appHtml.length < 500) throw new Error(`预渲染 ${url} 内容过短，可能渲染失败`)
   const pageUrl = SITE + (url === '/' ? '/' : url)
+  // hreflang：单 URL 三语（客户端切换），四个标签均指向本页，x-default 兜底
+  const hreflang = ['zh-CN', 'zh-TW', 'en', 'x-default']
+    .map((l) => `<link rel="alternate" hreflang="${l}" href="${pageUrl}" />`)
+    .join('\n  ')
   const html = template
     .replace('<html lang="zh-CN">', '<html lang="zh-CN" data-prerender-locale="zh">')
     .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
@@ -53,7 +50,7 @@ for (const [url, { file, title, desc }] of Object.entries(routes)) {
     .replace(/(<meta property="og:title" content=").*?(" \/>)/, `$1${title}$2`)
     .replace(/(<meta property="og:description" content=").*?(" \/>)/, `$1${desc}$2`)
     .replace(/(<meta property="og:url" content=").*?(" \/>)/, `$1${pageUrl}$2`)
-    .replace(/(<link rel="canonical" href=").*?(" \/>)/, `$1${pageUrl}$2`)
+    .replace(/(<link rel="canonical" href=").*?(" \/>)/, `$1${pageUrl}$2\n  ${hreflang}`)
     .replace(/(<meta name="twitter:title" content=").*?(" \/>)/, `$1${title}$2`)
     .replace(/(<meta name="twitter:description" content=").*?(" \/>)/, `$1${desc}$2`)
   const outPath = join(dist, file)

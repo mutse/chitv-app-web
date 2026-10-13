@@ -1,5 +1,6 @@
 import { Github, Mail, Code2, Database, Layers, Palette } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
+import { PageMeta } from '../components/PageMeta'
 import { GITHUB_URL, CONTACT_EMAIL } from '../config'
 
 export function About() {
@@ -14,6 +15,7 @@ export function About() {
 
   return (
     <>
+      <PageMeta titleKey="meta.about.title" descKey="meta.about.desc" />
       {/* Page Hero */}
       <section className="pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
