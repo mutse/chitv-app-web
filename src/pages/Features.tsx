@@ -1,5 +1,6 @@
 import { Search, Play, Bookmark, History, Smartphone, Shield } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
+import { PageMeta } from '../components/PageMeta'
 
 export function Features() {
   const { t } = useTranslation()
@@ -25,6 +26,7 @@ export function Features() {
 
   return (
     <>
+      <PageMeta titleKey="meta.features.title" descKey="meta.features.desc" />
       {/* Page Hero */}
       <section className="pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

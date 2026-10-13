@@ -99,4 +99,15 @@ export const zh: Record<string, string> = {
   'notfound.title': '页面未找到',
   'notfound.desc': '抱歉，您访问的页面不存在或已被移动。',
   'notfound.back': '返回首页',
+  // Meta（每页 title / description）
+  'meta.home.title': 'ChiTV - 跨平台视频播放器',
+  'meta.home.desc': 'ChiTV 是一款基于 SwiftUI 构建的跨平台视频流媒体应用，支持 macOS、iOS 和 tvOS，为您带来极致的观看体验。',
+  'meta.features.title': '产品特性 - ChiTV',
+  'meta.features.desc': '探索 ChiTV 的核心特性：跨平台支持、智能搜索、HLS 高清播放、收藏夹、观看历史与暗色主题。',
+  'meta.android.title': 'ChiTV 安卓版',
+  'meta.android.desc': 'ChiTV 安卓版基于 Flutter 构建，HLS 流媒体播放搭配 Material 3 设计，在安卓设备上同样流畅。',
+  'meta.about.title': '关于 ChiTV',
+  'meta.about.desc': '了解 ChiTV：基于 SwiftUI 构建的跨平台视频流媒体应用，让每个人都能享受优质的视频内容。',
+  'meta.notfound.title': '页面未找到 - ChiTV',
+  'meta.notfound.desc': '抱歉，您访问的页面不存在。返回 ChiTV 首页继续探索。',
 }

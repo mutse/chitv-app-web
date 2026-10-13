@@ -99,4 +99,15 @@ export const en: Record<string, string> = {
   'notfound.title': 'Page Not Found',
   'notfound.desc': 'Sorry, the page you are looking for does not exist or has been moved.',
   'notfound.back': 'Back to Home',
+  // Meta (per-page title / description)
+  'meta.home.title': 'ChiTV - Cross-Platform Video Player',
+  'meta.home.desc': 'ChiTV is a SwiftUI-built cross-platform video streaming app for macOS, iOS and tvOS. Watch anywhere, anytime.',
+  'meta.features.title': 'Features - ChiTV',
+  'meta.features.desc': 'Explore ChiTV highlights: cross-platform support, smart search, HLS HD playback, favorites, watch history and dark theme.',
+  'meta.android.title': 'ChiTV for Android',
+  'meta.android.desc': 'ChiTV for Android is built with Flutter, pairing HLS streaming with Material 3 design for a smooth experience.',
+  'meta.about.title': 'About ChiTV',
+  'meta.about.desc': 'About ChiTV: a SwiftUI-built cross-platform video streaming app that brings quality video to everyone.',
+  'meta.notfound.title': 'Page Not Found - ChiTV',
+  'meta.notfound.desc': 'Sorry, the page you are looking for does not exist. Head back to the ChiTV home page.',
 }
