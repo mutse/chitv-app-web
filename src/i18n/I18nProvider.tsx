@@ -11,7 +11,7 @@ export const I18nContext = createContext<I18nContextType>({
   setLocale: () => {},
 })
 
-function detectLocale(): Locale {
+export function detectLocale(): Locale {
   const stored = localStorage.getItem('chitv-lang')
   if (stored === 'zh' || stored === 'tw' || stored === 'en') return stored
   const lang = navigator.language.toLowerCase()
