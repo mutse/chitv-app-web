@@ -3,13 +3,13 @@ import { useTranslation } from '../i18n/useTranslation'
 import { GITHUB_URL, CONTACT_EMAIL } from '../config'
 
 export function About() {
-  const { t, locale } = useTranslation()
+  const { t } = useTranslation()
 
   const techStack = [
-    { icon: Code2, name: 'SwiftUI', desc: { zh: 'Apple 原生 UI 框架', tw: 'Apple 原生 UI 框架', en: 'Apple-native UI framework' } },
-    { icon: Layers, name: 'AVPlayer', desc: { zh: '流媒体播放引擎', tw: '流媒體播放引擎', en: 'Streaming playback engine' } },
-    { icon: Database, name: 'SwiftData', desc: { zh: '本地数据持久化', tw: '本地數據持久化', en: 'Local data persistence' } },
-    { icon: Palette, name: 'CloudKit', desc: { zh: '跨设备云端同步', tw: '跨設備雲端同步', en: 'Cross-device cloud sync' } },
+    { icon: Code2, name: 'SwiftUI', descKey: 'about.tech.swiftui.desc' },
+    { icon: Layers, name: 'AVPlayer', descKey: 'about.tech.avplayer.desc' },
+    { icon: Database, name: 'SwiftData', descKey: 'about.tech.swiftdata.desc' },
+    { icon: Palette, name: 'CloudKit', descKey: 'about.tech.cloudkit.desc' },
   ]
 
   return (
@@ -52,7 +52,7 @@ export function About() {
                   <tech.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-semibold mb-1">{tech.name}</h3>
-                <p className="text-text-secondary text-sm">{tech.desc[locale]}</p>
+                <p className="text-text-secondary text-sm">{t(tech.descKey)}</p>
               </div>
             ))}
           </div>
