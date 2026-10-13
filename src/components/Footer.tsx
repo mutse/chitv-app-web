@@ -34,6 +34,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/android" className="text-sm text-text-secondary hover:text-primary transition-colors duration-300">
+                  {t('nav.android')}
+                </Link>
+              </li>
+              <li>
                 <Link to="/about" className="text-sm text-text-secondary hover:text-primary transition-colors duration-300">
                   {t('nav.about')}
                 </Link>
