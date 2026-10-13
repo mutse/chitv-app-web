@@ -3,7 +3,7 @@
 ChiTV 官网：基于 SwiftUI 的跨平台（macOS / iOS / tvOS）视频播放器产品站。
 
 - 技术栈：Vite 6 + React 19 + Tailwind CSS v4 + react-router v7
-- 双语：中文 / English（`src/i18n/translations.ts`，语言偏好存 localStorage）
+- 三语：简体中文 / 繁體中文 / English（`src/locale/{zh,tw,en}.ts`，语言偏好存 localStorage）
 - 部署：Cloudflare Pages（`wrangler.toml`，构建产物 `dist/`）
 
 ## 本地开发
@@ -44,7 +44,8 @@ PR 只跑构建校验，不部署。
 src/
   components/   Header / Footer / Hero / FeatureGrid / CTASection / MobileNav / ...
   pages/        Home / Features / About / NotFound
-  i18n/         双语实现（I18nProvider / translations / useTranslation）
+  i18n/         语言机制（I18nProvider / useTranslation / types）
+  locale/       三语文本资源（zh.ts / tw.ts / en.ts，index.ts 组装并校验 key 对齐）
   styles/       Tailwind v4 主题（index.css）
   config.ts     对外链接集中配置
 public/

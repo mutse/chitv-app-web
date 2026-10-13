@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { I18nContext } from './I18nProvider'
-import { translations } from './translations'
+import { translations } from '../locale'
 
 export function useTranslation() {
   const { locale, setLocale } = useContext(I18nContext)
