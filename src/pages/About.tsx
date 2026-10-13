@@ -6,10 +6,10 @@ export function About() {
   const { t, locale } = useTranslation()
 
   const techStack = [
-    { icon: Code2, name: 'SwiftUI', desc: { zh: 'Apple 原生 UI 框架', en: 'Apple-native UI framework' } },
-    { icon: Layers, name: 'AVPlayer', desc: { zh: '流媒体播放引擎', en: 'Streaming playback engine' } },
-    { icon: Database, name: 'SwiftData', desc: { zh: '本地数据持久化', en: 'Local data persistence' } },
-    { icon: Palette, name: 'CloudKit', desc: { zh: '跨设备云端同步', en: 'Cross-device cloud sync' } },
+    { icon: Code2, name: 'SwiftUI', desc: { zh: 'Apple 原生 UI 框架', tw: 'Apple 原生 UI 框架', en: 'Apple-native UI framework' } },
+    { icon: Layers, name: 'AVPlayer', desc: { zh: '流媒体播放引擎', tw: '流媒體播放引擎', en: 'Streaming playback engine' } },
+    { icon: Database, name: 'SwiftData', desc: { zh: '本地数据持久化', tw: '本地數據持久化', en: 'Local data persistence' } },
+    { icon: Palette, name: 'CloudKit', desc: { zh: '跨设备云端同步', tw: '跨設備雲端同步', en: 'Cross-device cloud sync' } },
   ]
 
   return (

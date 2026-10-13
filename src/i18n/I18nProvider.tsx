@@ -13,8 +13,16 @@ export const I18nContext = createContext<I18nContextType>({
 
 function detectLocale(): Locale {
   const stored = localStorage.getItem('chitv-lang')
-  if (stored === 'zh' || stored === 'en') return stored
-  return navigator.language.startsWith('zh') ? 'zh' : 'en'
+  if (stored === 'zh' || stored === 'tw' || stored === 'en') return stored
+  const lang = navigator.language.toLowerCase()
+  if (lang.startsWith('zh-tw') || lang.startsWith('zh-hk') || lang.startsWith('zh-mo')) return 'tw'
+  return lang.startsWith('zh') ? 'zh' : 'en'
+}
+
+const htmlLang: Record<Locale, string> = {
+  zh: 'zh-CN',
+  tw: 'zh-TW',
+  en: 'en',
 }
 
 export function I18nProvider({ children }: { children: ReactNode }) {
@@ -26,7 +34,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   }
 
   useEffect(() => {
-    document.documentElement.lang = locale === 'zh' ? 'zh-CN' : 'en'
+    document.documentElement.lang = htmlLang[locale]
   }, [locale])
 
   return (
