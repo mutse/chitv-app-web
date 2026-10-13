@@ -11,4 +11,5 @@ export const DOWNLOAD_URLS = {
   ios: `${GITHUB_URL}/releases`,
   macos: `${GITHUB_URL}/releases`,
   tvos: `${GITHUB_URL}/releases`,
+  android: `${GITHUB_URL}/releases`,
 } as const

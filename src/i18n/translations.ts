@@ -4,6 +4,7 @@ export const translations: Translations = {
   // Nav
   'nav.home': { zh: '首页', en: 'Home' },
   'nav.features': { zh: '产品特性', en: 'Features' },
+  'nav.android': { zh: '安卓版', en: 'Android' },
   'nav.about': { zh: '关于', en: 'About' },
 
   // Hero
@@ -117,6 +118,45 @@ export const translations: Translations = {
   'cta.ios': { zh: 'iOS 下载', en: 'iOS' },
   'cta.macos': { zh: 'macOS 下载', en: 'macOS' },
   'cta.tvos': { zh: 'tvOS 下载', en: 'tvOS' },
+  'cta.android': { zh: 'Android 下载', en: 'Android' },
+
+  // Android page
+  'android.hero.title': { zh: 'ChiTV 安卓版', en: 'ChiTV for Android' },
+  'android.hero.subtitle': {
+    zh: '基于 Flutter 构建的安卓视频播放器，HLS 流媒体播放搭配 Material 3 设计，在安卓设备上同样流畅。',
+    en: 'An Android video player built with Flutter, pairing HLS streaming with Material 3 design — smooth on Android too.',
+  },
+  'android.features.player.title': { zh: 'HLS 流媒体播放', en: 'HLS Streaming' },
+  'android.features.player.desc': {
+    zh: 'HLS 协议自适应码率播放，根据网络状况自动切换清晰度，弱网环境也能流畅观看。支持进度拖拽、倍速播放与全屏沉浸体验。',
+    en: 'Adaptive-bitrate HLS playback that switches quality with your network, staying smooth even on weak connections. Seeking, speed control, and immersive fullscreen included.',
+  },
+  'android.features.design.title': { zh: 'Material 3 设计', en: 'Material 3 Design' },
+  'android.features.design.desc': {
+    zh: '遵循 Material 3 设计语言，原生安卓质感，动态取色与圆角卡片，亮暗主题随系统自动切换。',
+    en: 'Built on the Material 3 design language with a native Android feel — dynamic color, rounded cards, and light/dark themes following the system.',
+  },
+  'android.features.bookmarks.title': { zh: '收藏管理', en: 'Bookmark Management' },
+  'android.features.bookmarks.desc': {
+    zh: '一键收藏喜爱的视频，集中网格展示，长按即可删除。Hive 本地数据库持久化存储，离线可用，数据不丢失。',
+    en: 'Bookmark videos with one tap, browse them in a grid, long-press to remove. Hive local persistence keeps your data safe and available offline.',
+  },
+  'android.features.history.title': { zh: '观看历史', en: 'Watch History' },
+  'android.features.history.desc': {
+    zh: '自动记录每次观看的进度与时长，Riverpod 响应式状态管理让列表实时更新，打开即续看。',
+    en: 'Every watch session is recorded with progress and duration. Riverpod reactive state management keeps the list live — open and resume instantly.',
+  },
+  'android.tech.title': { zh: '技术亮点', en: 'Tech Highlights' },
+  'android.tech.subtitle': {
+    zh: 'Flutter 跨平台技术栈，为安卓深度优化',
+    en: 'A Flutter tech stack, tuned for Android',
+  },
+  'android.cta.title': { zh: '下载 ChiTV 安卓版', en: 'Download ChiTV for Android' },
+  'android.cta.subtitle': {
+    zh: '在 GitHub Releases 获取最新 APK，免费使用',
+    en: 'Get the latest APK from GitHub Releases, free to use',
+  },
+  'android.cta.button': { zh: '前往下载', en: 'Get the App' },
 
   // About
   'about.title': { zh: '关于 ChiTV', en: 'About ChiTV' },

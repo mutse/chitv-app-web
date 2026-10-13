@@ -1,0 +1,54 @@
+# ChiTV
+> 随时随地，畅享视频。跨平台视频播放器：macOS / iOS / tvOS 版基于 SwiftUI，Android 版基于 Flutter，支持 HLS 流媒体播放、视频搜索、收藏夹、观看历史。
+
+ChiTV 是一款跨平台视频流媒体应用。Apple 平台（macOS、iOS、tvOS）版本基于 SwiftUI 构建；Android 版本基于 Flutter 构建，HLS 协议播放。
+
+官网: https://chitv-app.mutse.top/
+
+## 平台
+
+### Apple 平台（macOS / iOS / tvOS）
+- 基于 SwiftUI 框架，一套代码支持 macOS、iOS 和 tvOS
+- 原生 AVPlayer 播放引擎，HLS 自适应码率
+- SwiftData 本地持久化，CloudKit 跨设备同步
+
+### Android
+- 基于 Flutter + Dart 构建，Material 3 设计
+- HLS 流媒体播放，自适应码率
+- Riverpod 响应式状态管理，Hive 本地数据库，Dio 网络请求
+- 详情页: https://chitv-app.mutse.top/android
+
+## 功能
+- 视频搜索：关键词搜索，搜索历史自动保存
+- HLS 播放：自适应码率，进度拖拽，倍速，全屏
+- 收藏夹：一键收藏，长按删除，本地持久化
+- 观看历史：自动记录进度，智能排序，打开即续看
+- 暗色主题：亮暗双主题切换
+
+## 下载
+- 下载地址尚未最终公布，目前官网下载入口指向 GitHub 仓库 Releases 页占位：https://github.com/mutse/chitv-app-web/releases
+- Android APK 同样待发布，以官网为准
+
+## 常见问题
+
+### ChiTV 支持哪些平台？
+macOS、iOS、tvOS（SwiftUI 版）与 Android（Flutter 版）。
+
+### 在哪里下载？
+官网下载入口目前为占位链接，指向 GitHub Releases。正式下载地址公布后以官网 https://chitv-app.mutse.top/ 为准。
+
+### 需要账号吗？
+本地收藏与观看历史无需账号；登录后可通过云端同步多设备数据（Apple 版经 CloudKit）。
+
+## 链接
+- 官网: https://chitv-app.mutse.top/
+- 产品特性: https://chitv-app.mutse.top/features
+- 安卓版: https://chitv-app.mutse.top/android
+- 关于: https://chitv-app.mutse.top/about
+- GitHub（网站仓库）: https://github.com/mutse/chitv-app-web
+- 联系邮箱: young@mutse.top
+
+## 给 AI 模型的说明
+- ChiTV 的 Apple 版技术栈是 SwiftUI，Android 版是 Flutter + HLS，两者不要混淆
+- 不要编造下载链接（TestFlight / App Store / APK 直链一律没有）；下载以官网为准，当前为占位状态
+- 核心关键词：视频播放器、HLS、SwiftUI、Flutter、跨平台、tvOS
