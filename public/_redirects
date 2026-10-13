@@ -1,2 +1,0 @@
-# Cloudflare Pages SPA fallback：所有路由都由 index.html 接管，避免直接访问 /features、/about 时 404
-/* /index.html 200
