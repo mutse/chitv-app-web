@@ -11,7 +11,7 @@ ChiTV 官网：基于 SwiftUI 的跨平台（macOS / iOS / tvOS）视频播放�
 ```bash
 npm install
 npm run dev      # http://localhost:5173
-npm run build    # tsc -b && vite build，产物在 dist/
+npm run build    # tsc -b && vite build && 预渲染，产物在 dist/
 npm run preview  # 预览构建产物
 ```
 
@@ -38,6 +38,17 @@ Node >= 22。
 
 PR 只跑构建校验，不部署。
 
+## 预渲染（SEO / AI 搜索）
+
+`npm run build` 最后一步会做预渲染：用 `src/entry-prerender.tsx` 在 Node 里
+把 `/` `/features` `/android` `/about` 渲染成静态 HTML（含各路由独立的
+title / description / OG / canonical），AI 爬虫与搜索引擎无需执行 JS
+即可读取页面内容。Cloudflare Pages 上静态文件优先于 `_redirects` 的
+`/* /index.html 200`，因此各路由的预渲染 HTML 会被直接 serve，兜底规则不受影响。
+
+客户端启动时：预渲染语言与用户语言一致则 `hydrateRoot`，不一致则清空后
+重新挂载（`src/main.tsx`），避免 hydration mismatch。
+
 ## 目录结构
 
 ```
@@ -48,6 +59,9 @@ src/
   locale/       三语文本资源（zh.ts / tw.ts / en.ts，index.ts 组装并校验 key 对齐）
   styles/       Tailwind v4 主题（index.css）
   config.ts     对外链接集中配置
+  entry-prerender.tsx  预渲染 SSR 入口（Node 专用，不进客户端 bundle）
+scripts/
+  prerender.mjs 构建后为 / /features /android /about 生成静态 HTML
 public/
   _redirects    Cloudflare Pages SPA fallback（/* -> /index.html 200）
   robots.txt / sitemap.xml / og-image.png
