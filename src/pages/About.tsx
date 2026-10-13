@@ -1,6 +1,7 @@
 import { Github, Mail, Code2, Database, Layers, Palette } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
+import { FaqSection } from '../components/FaqSection'
 import { GITHUB_URL, CONTACT_EMAIL } from '../config'
 
 export function About() {
@@ -60,6 +61,8 @@ export function About() {
           </div>
         </div>
       </section>
+
+      <FaqSection />
 
       {/* Contact */}
       <section className="py-20">

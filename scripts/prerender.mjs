@@ -42,7 +42,7 @@ for (const [url, { file, titleKey, descKey }] of Object.entries(routes)) {
   const hreflang = ['zh-CN', 'zh-TW', 'en', 'x-default']
     .map((l) => `<link rel="alternate" hreflang="${l}" href="${pageUrl}" />`)
     .join('\n  ')
-  const html = template
+  let html = template
     .replace('<html lang="zh-CN">', '<html lang="zh-CN" data-prerender-locale="zh">')
     .replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
     .replace(/<title>.*?<\/title>/, `<title>${title}</title>`)
@@ -53,6 +53,25 @@ for (const [url, { file, titleKey, descKey }] of Object.entries(routes)) {
     .replace(/(<link rel="canonical" href=").*?(" \/>)/, `$1${pageUrl}$2\n  ${hreflang}`)
     .replace(/(<meta name="twitter:title" content=").*?(" \/>)/, `$1${title}$2`)
     .replace(/(<meta name="twitter:description" content=").*?(" \/>)/, `$1${desc}$2`)
+  // /about 页：可见 FAQ 与 FAQPage 结构化数据保持一致（Google 富摘要 / AI 引用）
+  if (url === '/about') {
+    const faqJsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [1, 2, 3, 4, 5, 6].map((n) => ({
+        '@type': 'Question',
+        name: zhDict[`faq.q${n}`],
+        acceptedAnswer: { '@type': 'Answer', text: zhDict[`faq.a${n}`] },
+      })),
+    }
+    for (const item of faqJsonLd.mainEntity) {
+      if (!item.name || !item.acceptedAnswer.text) throw new Error(`zh.ts 缺少 faq.q/a`)
+    }
+    html = html.replace(
+      '</head>',
+      `<script type="application/ld+json">${JSON.stringify(faqJsonLd)}</script>\n</head>`
+    )
+  }
   const outPath = join(dist, file)
   mkdirSync(dirname(outPath), { recursive: true })
   writeFileSync(outPath, html)

@@ -110,4 +110,18 @@ export const zh: Record<string, string> = {
   'meta.about.desc': '了解 ChiTV：基于 SwiftUI 构建的跨平台视频流媒体应用，让每个人都能享受优质的视频内容。',
   'meta.notfound.title': '页面未找到 - ChiTV',
   'meta.notfound.desc': '抱歉，您访问的页面不存在。返回 ChiTV 首页继续探索。',
+  // FAQ
+  'faq.title': '常见问题',
+  'faq.q1': 'ChiTV 支持哪些平台？',
+  'faq.a1': 'macOS、iOS、tvOS（SwiftUI 原生版）与 Android（Flutter 版）。',
+  'faq.q2': '在哪里下载 ChiTV？',
+  'faq.a2': '点击官网下载按钮获取。当前下载入口为占位链接（指向 GitHub Releases），正式下载地址公布后以官网为准。',
+  'faq.q3': '需要注册账号吗？',
+  'faq.a3': '本地收藏与观看历史无需账号即可使用；登录后可通过云端同步多设备数据（Apple 版经 CloudKit）。',
+  'faq.q4': 'ChiTV 支持哪些视频格式？',
+  'faq.a4': '支持 HLS 流媒体播放，享受高清流畅的观看体验。',
+  'faq.q5': '观看历史和收藏夹保存在哪里？',
+  'faq.a5': '默认保存在本地设备上；登录后可通过云端在多设备间同步（Apple 版经 CloudKit）。',
+  'faq.q6': '如何切换界面语言？',
+  'faq.a6': '点击右上角的语言菜单，可在简体中文、繁體中文与 English 之间随时切换。',
 }
