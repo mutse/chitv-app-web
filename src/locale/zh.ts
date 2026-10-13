@@ -89,8 +89,8 @@ export const zh: Record<string, string> = {
   'footer.terms': '使用条款',
   'footer.copyright': `© ${new Date().getFullYear()} ChiTV. 保留所有权利。`,
   // Language
-  'lang.zh': '中文',
-  'lang.tw': '繁體',
+  'lang.zh': '简体中文',
+  'lang.tw': '繁體中文',
   'lang.en': 'English',
   // Accessibility
   'a11y.toggleMenu': '切换菜单',
