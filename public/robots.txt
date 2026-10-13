@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# AI 搜索爬虫：明确允许抓取，站点内容可被 AI 引用
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+
 Sitemap: https://chitv-app.mutse.top/sitemap.xml
