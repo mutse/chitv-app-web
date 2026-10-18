@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Play, Github } from 'lucide-react'
+import { Github } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { GITHUB_URL } from '../config'
 
@@ -12,9 +12,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <Play className="w-4 h-4 text-white fill-white" />
-              </div>
+              <img src="/logo.png" alt="ChiTV" className="w-8 h-8 rounded-lg" />
               <span className="text-xl font-bold">ChiTV</span>
             </Link>
             <p className="text-text-secondary text-sm">{t('footer.desc')}</p>
