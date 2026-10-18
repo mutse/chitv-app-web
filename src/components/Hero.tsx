@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Download, ArrowRight, Smartphone, Monitor, Laptop } from 'lucide-react'
+import { Download, ArrowRight } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 
 export function Hero() {
@@ -35,56 +35,19 @@ export function Hero() {
           </div>
 
           <div className="flex justify-center md:justify-end">
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-2xl">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-2xl" />
-              <div className="relative bg-surface rounded-2xl p-6 border border-black/10 shadow-lg">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-3 h-3 rounded-full bg-error" />
-                  <div className="w-3 h-3 rounded-full bg-accent" />
-                  <div className="w-3 h-3 rounded-full bg-primary" />
-                </div>
-                <div className="space-y-4">
-                  <div className="bg-bg rounded-xl p-4">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
-                        <Smartphone className="w-5 h-5 text-primary" />
-                      </div>
-                      <div>
-                        <div className="text-sm font-medium">iOS & tvOS</div>
-                        <div className="text-xs text-text-secondary">Mobile</div>
-                      </div>
-                    </div>
-                    <div className="h-2 bg-primary/30 rounded-full">
-                      <div className="h-full w-4/5 bg-primary rounded-full" />
-                    </div>
-                  </div>
-                  <div className="bg-bg rounded-xl p-4">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center">
-                        <Laptop className="w-5 h-5 text-accent" />
-                      </div>
-                      <div>
-                        <div className="text-sm font-medium">macOS</div>
-                        <div className="text-xs text-text-secondary">Desktop</div>
-                      </div>
-                    </div>
-                    <div className="h-2 bg-accent/30 rounded-full">
-                      <div className="h-full w-3/5 bg-accent rounded-full" />
-                    </div>
-                  </div>
-                  <div className="bg-bg rounded-xl p-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
-                        <Monitor className="w-5 h-5 text-primary" />
-                      </div>
-                      <div>
-                        <div className="text-sm font-medium">HLS Streaming</div>
-                        <div className="text-xs text-text-secondary">Adaptive Bitrate</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <figure className="relative rounded-2xl overflow-hidden border border-black/10 shadow-2xl">
+                <img
+                  src="/screenshots/tvos.jpg"
+                  alt="ChiTV tvOS"
+                  className="w-full h-auto"
+                  loading="eager"
+                />
+                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur text-white text-xs font-medium">
+                  tvOS
+                </span>
+              </figure>
             </div>
           </div>
         </div>
