@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Play } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { MobileNav } from './MobileNav'
@@ -32,9 +31,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <Play className="w-4 h-4 text-white fill-white" />
-            </div>
+            <img src="/logo.png" alt="ChiTV" className="w-8 h-8 rounded-lg transition-transform duration-300 group-hover:scale-110" />
             <span className="text-xl font-bold">ChiTV</span>
           </Link>
 
