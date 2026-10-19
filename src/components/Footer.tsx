@@ -58,6 +58,16 @@ export function Footer() {
                   {t('footer.github')}
                 </a>
               </li>
+              <li>
+                <Link to="/privacy" className="text-sm text-text-secondary hover:text-primary transition-colors duration-300">
+                  {t('footer.privacy')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" className="text-sm text-text-secondary hover:text-primary transition-colors duration-300">
+                  {t('footer.terms')}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
