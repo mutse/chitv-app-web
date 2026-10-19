@@ -9,6 +9,8 @@ const Features = lazy(() => import('./pages/Features').then((m) => ({ default: m
 const About = lazy(() => import('./pages/About').then((m) => ({ default: m.About })))
 const Android = lazy(() => import('./pages/Android').then((m) => ({ default: m.Android })))
 const NotFound = lazy(() => import('./pages/NotFound').then((m) => ({ default: m.NotFound })))
+const Privacy = lazy(() => import('./pages/Privacy').then((m) => ({ default: m.Privacy })))
+const Terms = lazy(() => import('./pages/Terms').then((m) => ({ default: m.Terms })))
 
 export function App() {
   return (
@@ -22,6 +24,8 @@ export function App() {
               <Route path="features" element={<Features />} />
               <Route path="android" element={<Android />} />
               <Route path="about" element={<About />} />
+              <Route path="privacy" element={<Privacy />} />
+              <Route path="terms" element={<Terms />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
