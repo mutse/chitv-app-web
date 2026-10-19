@@ -16,7 +16,7 @@ ChiTV 是一款跨平台视频流媒体应用。Apple 平台（macOS、iOS、tvO
 - 基于 Flutter + Dart 构建，Material 3 设计
 - HLS 流媒体播放，自适应码率
 - Riverpod 响应式状态管理，Hive 本地数据库，Dio 网络请求
-- 详情页: https://chitv-app.mutse.top/android
+- 详情页: https://chitv-app.mutse.top/android/
 
 ## 功能
 - 视频搜索：关键词搜索，搜索历史自动保存
@@ -42,9 +42,9 @@ macOS、iOS、tvOS（SwiftUI 版）与 Android（Flutter 版）。
 
 ## 链接
 - 官网: https://chitv-app.mutse.top/
-- 产品特性: https://chitv-app.mutse.top/features
-- 安卓版: https://chitv-app.mutse.top/android
-- 关于: https://chitv-app.mutse.top/about
+- 产品特性: https://chitv-app.mutse.top/features/
+- 安卓版: https://chitv-app.mutse.top/android/
+- 关于: https://chitv-app.mutse.top/about/
 - GitHub（网站仓库）: https://github.com/mutse/chitv-app-web
 - 联系邮箱: young@mutse.top
 
