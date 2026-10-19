@@ -10,6 +10,8 @@ import { Features } from './pages/Features'
 import { Android } from './pages/Android'
 import { About } from './pages/About'
 import { NotFound } from './pages/NotFound'
+import { Privacy } from './pages/Privacy'
+import { Terms } from './pages/Terms'
 
 export function render(url: string): string {
   return renderToString(
@@ -21,6 +23,8 @@ export function render(url: string): string {
             <Route path="features" element={<Features />} />
             <Route path="android" element={<Android />} />
             <Route path="about" element={<About />} />
+            <Route path="privacy" element={<Privacy />} />
+            <Route path="terms" element={<Terms />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
