@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Download, ArrowRight } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
+import { ScreenshotCarousel } from './ScreenshotCarousel'
 
 export function Hero() {
   const { t } = useTranslation()
@@ -34,21 +35,8 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="flex justify-center md:justify-end">
-            <div className="relative w-full max-w-2xl">
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-2xl" />
-              <figure className="relative rounded-2xl overflow-hidden border border-black/10 shadow-2xl">
-                <img
-                  src="/screenshots/tvos.jpg"
-                  alt="ChiTV tvOS"
-                  className="w-full h-auto"
-                  loading="eager"
-                />
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur text-white text-xs font-medium">
-                  tvOS
-                </span>
-              </figure>
-            </div>
+          <div className="flex min-w-0 justify-center md:justify-end">
+            <ScreenshotCarousel />
           </div>
         </div>
       </div>

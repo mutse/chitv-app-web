@@ -9,6 +9,9 @@ export const en: Record<string, string> = {
   'hero.subtitle': 'ChiTV is a cross-platform video streaming app built with SwiftUI, supporting macOS, iOS, and tvOS for the ultimate viewing experience.',
   'hero.download': 'Download Now',
   'hero.learnMore': 'Learn More',
+  'hero.screenshots': 'App screenshots',
+  'hero.previousScreenshot': 'Previous screenshot',
+  'hero.nextScreenshot': 'Next screenshot',
   // Features
   'features.title': 'Core Features',
   'features.subtitle': 'Carefully crafted features to meet all your viewing needs',

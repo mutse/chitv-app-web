@@ -9,6 +9,9 @@ export const tw: Record<string, string> = {
   'hero.subtitle': 'ChiTV 是一款基於 SwiftUI 構建的跨平台視頻流媒體應用，支持 macOS、iOS 和 tvOS，為您帶來極致的觀看體驗。',
   'hero.download': '立即下載',
   'hero.learnMore': '瞭解更多',
+  'hero.screenshots': '應用截圖',
+  'hero.previousScreenshot': '上一張截圖',
+  'hero.nextScreenshot': '下一張截圖',
   // Features
   'features.title': '核心特性',
   'features.subtitle': '精心打造的功能，滿足您的所有觀看需求',
