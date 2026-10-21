@@ -89,6 +89,8 @@ export const tw: Record<string, string> = {
   'about.contact.title': '聯繫我們',
   'about.contact.github': '在 GitHub 上關注我們',
   'about.contact.desc': 'ChiTV 是一個開源項目，歡迎參與貢獻和交流。',
+  'about.contact.telegram.title': '加入 Telegram 使用者群',
+  'about.contact.telegram.desc': '掃碼加入 ChiTV 使用者群，交流使用心得與反饋',
   // Footer
   'footer.desc': '跨平台視頻流媒體應用，支持 macOS、iOS 和 tvOS。',
   'footer.quickLinks': '快速鏈接',
