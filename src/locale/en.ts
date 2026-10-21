@@ -89,6 +89,8 @@ export const en: Record<string, string> = {
   'about.contact.title': 'Contact Us',
   'about.contact.github': 'Follow us on GitHub',
   'about.contact.desc': 'ChiTV is an open-source project. Contributions and discussions are welcome.',
+  'about.contact.telegram.title': 'Join our Telegram group',
+  'about.contact.telegram.desc': 'Scan to join the ChiTV user group for tips and feedback',
   // Footer
   'footer.desc': 'Cross-platform video streaming app for macOS, iOS, and tvOS.',
   'footer.quickLinks': 'Quick Links',

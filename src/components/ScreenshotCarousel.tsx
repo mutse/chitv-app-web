@@ -2,13 +2,14 @@ import { useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 
-const screenshots = [
-  { platform: 'tvOS', src: '/screenshots/tvos.jpg' },
-  { platform: 'iOS', src: '/screenshots/ios.png' },
-]
-
 export function ScreenshotCarousel() {
-  const { t } = useTranslation()
+  const { t, locale } = useTranslation()
+  // 海报按界面语言切换：简/繁用中文版，英文用英文版
+  const lang = locale === 'en' ? 'en' : 'zh'
+  const screenshots = [
+    { platform: 'tvOS', src: `/screenshots/appletv-${lang}.jpg` },
+    { platform: 'iOS', src: `/screenshots/iphone-${lang}.jpg` },
+  ]
   const [active, setActive] = useState(0)
   const touchStart = useRef<number | null>(null)
   const move = (direction: number) => {

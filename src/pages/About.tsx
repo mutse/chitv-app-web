@@ -87,6 +87,16 @@ export function About() {
               {t('about.contact.title')}
             </a>
           </div>
+          <div className="mt-12 inline-flex flex-col items-center gap-3 bg-surface border border-black/10 rounded-2xl px-8 py-6">
+            <img
+              src="/telegram-qr.png"
+              alt="ChiTV Telegram"
+              className="w-40 h-40 rounded-xl"
+              loading="lazy"
+            />
+            <p className="font-semibold">{t('about.contact.telegram.title')}</p>
+            <p className="text-text-secondary text-sm">{t('about.contact.telegram.desc')}</p>
+          </div>
         </div>
       </section>
     </>
