@@ -1,13 +1,14 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #1DB954;
-  --color-secondary: #F0ECF5;
-  --color-accent: #E5A300;
-  --color-bg: #F8F4FF;
-  --color-surface: #FFFFFF;
-  --color-text-primary: #1A1A2E;
-  --color-text-secondary: #64748B;
+  /* 主题色对齐 mole.fit：暖纸底 + 深海蓝品牌色 + 暖灰文字 */
+  --color-primary: #144A74;
+  --color-secondary: #E8E6DC;
+  --color-accent: #2D618C;
+  --color-bg: #F5F4ED;
+  --color-surface: #FAF9F5;
+  --color-text-primary: #363433;
+  --color-text-secondary: #6B6A64;
   --color-error: #E74C3C;
   --font-sans: system-ui, -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
 }
@@ -25,14 +26,14 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #17A34A, #D97706);
+  background: linear-gradient(135deg, #144A74, #2D618C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(250, 249, 245, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
