@@ -1,4 +1,4 @@
-import { Play, Palette, Bookmark, History, Download } from 'lucide-react'
+import { Play, Palette, Bookmark, History, Download, Search, Star, Tv } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
 import { DOWNLOAD_URLS } from '../config'
@@ -11,6 +11,9 @@ export function Android() {
     { icon: Palette, titleKey: 'android.features.design.title', descKey: 'android.features.design.desc' },
     { icon: Bookmark, titleKey: 'android.features.bookmarks.title', descKey: 'android.features.bookmarks.desc' },
     { icon: History, titleKey: 'android.features.history.title', descKey: 'android.features.history.desc' },
+    { icon: Search, titleKey: 'android.features.sources.title', descKey: 'android.features.sources.desc' },
+    { icon: Star, titleKey: 'android.features.douban.title', descKey: 'android.features.douban.desc' },
+    { icon: Tv, titleKey: 'android.features.live.title', descKey: 'android.features.live.desc' },
   ]
 
   const techBadges = [
