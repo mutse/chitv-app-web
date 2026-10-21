@@ -1,4 +1,4 @@
-import { Search, Play, Bookmark, History, Smartphone, Shield } from 'lucide-react'
+import { Search, Play, Bookmark, History, Smartphone, Cloud } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
 
@@ -11,7 +11,7 @@ export function Features() {
     { icon: Bookmark, titleKey: 'features.detail.bookmarks.title', descKey: 'features.detail.bookmarks.desc' },
     { icon: History, titleKey: 'features.detail.history.title', descKey: 'features.detail.history.desc' },
     { icon: Smartphone, titleKey: 'features.detail.crossPlatform.title', descKey: 'features.detail.crossPlatform.desc' },
-    { icon: Shield, titleKey: 'features.detail.auth.title', descKey: 'features.detail.auth.desc' },
+    { icon: Cloud, titleKey: 'features.detail.sync.title', descKey: 'features.detail.sync.desc' },
   ]
 
   const techBadges = [
