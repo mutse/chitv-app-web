@@ -31,11 +31,12 @@ export function Footer() {
                   {t('nav.features')}
                 </Link>
               </li>
+              {/* 暂时隐藏 Android 入口，恢复时取消注释
               <li>
                 <Link to="/android" className="text-sm text-text-secondary hover:text-primary transition-colors duration-300">
                   {t('nav.android')}
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/about" className="text-sm text-text-secondary hover:text-primary transition-colors duration-300">
                   {t('nav.about')}

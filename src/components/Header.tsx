@@ -18,7 +18,7 @@ export function Header() {
   const navLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/features', label: t('nav.features') },
-    { to: '/android', label: t('nav.android') },
+    // 暂时隐藏 Android 入口，恢复时取消注释：{ to: '/android', label: t('nav.android') },
     { to: '/about', label: t('nav.about') },
   ]
 

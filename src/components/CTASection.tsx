@@ -1,4 +1,4 @@
-import { Download, Smartphone, Laptop, Tv, Play } from 'lucide-react'
+import { Download, Smartphone, Laptop, Tv } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { DOWNLOAD_URLS } from '../config'
 
@@ -9,7 +9,7 @@ export function CTASection() {
     { label: t('cta.ios'), icon: Smartphone, href: DOWNLOAD_URLS.ios },
     { label: t('cta.macos'), icon: Laptop, href: DOWNLOAD_URLS.macos },
     { label: t('cta.tvos'), icon: Tv, href: DOWNLOAD_URLS.tvos },
-    { label: t('cta.android'), icon: Play, href: DOWNLOAD_URLS.android },
+    // 暂时隐藏 Android 下载按钮，恢复时取消注释：{ label: t('cta.android'), icon: Play, href: DOWNLOAD_URLS.android },
   ]
 
   return (
