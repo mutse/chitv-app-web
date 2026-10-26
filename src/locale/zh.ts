@@ -134,7 +134,7 @@ export const zh: Record<string, string> = {
   'faq.q5': '观看历史和收藏夹保存在哪里？',
   'faq.a5': '默认保存在本地设备上；登录 iCloud 后可通过云端在多设备间同步（Apple 版经 CloudKit）。',
   'faq.q6': '如何切换界面语言？',
-  'faq.a6': '点击右上角的语言菜单，可在简体中文、繁體中文与 English 之间随时切换。',
+  'faq.a6': '跟随系统语言自动加载简体中文、繁體中文和 English（默认）',
   'meta.privacy.title': '隐私政策 - ChiTV',
   'meta.privacy.desc': 'ChiTV Player iOS/tvOS 隐私政策：本机数据、网络请求、可选 iCloud 同步与 Apple 购买。',
   'meta.terms.title': '服务条款 - ChiTV',
