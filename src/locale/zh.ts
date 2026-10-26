@@ -92,6 +92,11 @@ export const zh: Record<string, string> = {
   'about.contact.telegram.title': '加入 Telegram 用户群',
   'about.contact.telegram.desc': '扫码加入 ChiTV 用户群，交流使用心得与反馈',
   // Footer
+  'footer.support': '支持',
+  'footer.changelog': '更新日志',
+  'footer.legal': '法律',
+  'footer.android': 'Android 版',
+  'footer.contact': '联系',
   'footer.desc': '跨平台视频流媒体应用，支持 macOS、iOS 和 tvOS。',
   'footer.quickLinks': '快速链接',
   'footer.resources': '资源',

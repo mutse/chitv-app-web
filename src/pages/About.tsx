@@ -1,11 +1,11 @@
 import { Github, Mail, Code2, Database, Layers, Palette } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
-import { FaqSection } from '../components/FaqSection'
-import { GITHUB_URL, CONTACT_EMAIL } from '../config'
+import { GITHUB_URL, CONTACT_EMAIL, TELEGRAM_URL } from '../config'
 
 export function About() {
   const { t } = useTranslation()
+  const [telegramTitlePrefix, telegramTitleSuffix] = t('about.contact.telegram.title').split('Telegram')
 
   const techStack = [
     { icon: Code2, name: 'SwiftUI', descKey: 'about.tech.swiftui.desc' },
@@ -62,8 +62,6 @@ export function About() {
         </div>
       </section>
 
-      <FaqSection />
-
       {/* Contact */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -87,14 +85,25 @@ export function About() {
               {t('about.contact.title')}
             </a>
           </div>
-          <div className="mt-12 inline-flex flex-col items-center gap-3 bg-surface border border-black/10 rounded-2xl px-8 py-6">
+          <div id="telegram" className="mt-12 inline-flex flex-col items-center gap-3 bg-surface border border-black/10 rounded-2xl px-8 py-6 scroll-mt-24">
             <img
               src="/telegram-qr.png"
               alt="ChiTV Telegram"
               className="w-40 h-40 rounded-xl"
               loading="lazy"
             />
-            <p className="font-semibold">{t('about.contact.telegram.title')}</p>
+            <p className="font-semibold">
+              {telegramTitlePrefix}
+              <a
+                href={TELEGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline underline-offset-4 hover:text-primary/80 transition-colors duration-300"
+              >
+                Telegram
+              </a>
+              {telegramTitleSuffix}
+            </p>
             <p className="text-text-secondary text-sm">{t('about.contact.telegram.desc')}</p>
           </div>
         </div>

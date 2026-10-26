@@ -7,6 +7,9 @@ export const GITHUB_URL = 'https://github.com/mutse/chitv-app-web'
 
 export const CONTACT_EMAIL = 'young@mutse.top'
 
+export const TWITTER_URL = 'https://x.com/mutse_young'
+export const TELEGRAM_URL = 'https://t.me/+eiCvvlxhyzowMDJh'
+
 export const DOWNLOAD_URLS = {
   ios: `${GITHUB_URL}/releases`,
   macos: `${GITHUB_URL}/releases`,

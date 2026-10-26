@@ -1,7 +1,7 @@
 import { Hero } from '../components/Hero'
 import { PageMeta } from '../components/PageMeta'
 import { FeatureGrid } from '../components/FeatureGrid'
-import { CTASection } from '../components/CTASection'
+import { FaqSection } from '../components/FaqSection'
 
 export function Home() {
   return (
@@ -9,7 +9,7 @@ export function Home() {
       <PageMeta titleKey="meta.home.title" descKey="meta.home.desc" />
       <Hero />
       <FeatureGrid />
-      <CTASection />
+      <FaqSection />
     </>
   )
 }

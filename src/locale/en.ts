@@ -92,6 +92,11 @@ export const en: Record<string, string> = {
   'about.contact.telegram.title': 'Join our Telegram group',
   'about.contact.telegram.desc': 'Scan to join the ChiTV user group for tips and feedback',
   // Footer
+  'footer.support': 'Support',
+  'footer.changelog': 'Changelog',
+  'footer.legal': 'Legal',
+  'footer.android': 'Android',
+  'footer.contact': 'Contact',
   'footer.desc': 'Cross-platform video streaming app for macOS, iOS, and tvOS.',
   'footer.quickLinks': 'Quick Links',
   'footer.resources': 'Resources',
