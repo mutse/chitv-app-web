@@ -15,7 +15,7 @@ globalThis.navigator ??= { language: 'zh-CN' }
 
 const { render } = await import(join(root, 'dist-ssr', 'entry-prerender.js'))
 
-const SITE = 'https://chitv-app.mutse.top'
+const SITE = 'https://chitv.fit'
 const template = readFileSync(join(dist, 'index.html'), 'utf8')
 
 // 从 src/locale/zh.ts 解析中文 meta 文案，与客户端 PageMeta 共用同一数据源

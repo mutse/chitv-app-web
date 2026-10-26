@@ -3,7 +3,7 @@
 
 ChiTV 是一款跨平台视频流媒体应用。Apple 平台（macOS、iOS、tvOS）版本基于 SwiftUI 构建；Android 版本基于 Flutter 构建，HLS 协议播放。ChiTV 是播放器工具，本身不提供、托管或分发任何视频内容，播放内容来自用户自行添加的内容源。
 
-官网: https://chitv-app.mutse.top/
+官网: https://chitv.fit/
 
 ## 平台
 
@@ -11,14 +11,14 @@ ChiTV 是一款跨平台视频流媒体应用。Apple 平台（macOS、iOS、tvO
 - 基于 SwiftUI 框架，一套代码支持 macOS、iOS 和 tvOS
 - 原生 AVPlayer 播放引擎，HLS 自适应码率
 - SwiftData 本地持久化，CloudKit 跨设备同步
-- 隐私政策: https://chitv-app.mutse.top/privacy/
+- 隐私政策: https://chitv.fit/privacy/
 
 ### Android
 - 基于 Flutter + Dart 构建，Material 3 设计
 - HLS 流媒体播放，自适应码率
 - 多源聚合搜索、豆瓣推荐、直播 M3U/XMLTV 播放列表
 - Riverpod 响应式状态管理，Hive 本地数据库，Dio 网络请求
-- 详情页: https://chitv-app.mutse.top/android/
+- 详情页: https://chitv.fit/android/
 
 ## 功能
 - 视频搜索：关键词搜索，搜索历史自动保存
@@ -33,8 +33,8 @@ ChiTV 是一款跨平台视频流媒体应用。Apple 平台（macOS、iOS、tvO
 - 无需注册账号即可使用核心功能
 - 不收集、不追踪、不出售个人数据；官网为纯静态站点，无 Cookie、无统计追踪
 - Apple 版可选 iCloud（CloudKit）同步，数据保存在用户自己的 iCloud 账户中
-- 完整隐私政策: https://chitv-app.mutse.top/privacy/
-- 服务条款: https://chitv-app.mutse.top/terms/
+- 完整隐私政策: https://chitv.fit/privacy/
+- 服务条款: https://chitv.fit/terms/
 
 ## 下载
 - 下载地址尚未最终公布，目前官网下载入口指向 GitHub 仓库 Releases 页占位：https://github.com/mutse/chitv-app-web/releases
@@ -46,7 +46,7 @@ ChiTV 是一款跨平台视频流媒体应用。Apple 平台（macOS、iOS、tvO
 macOS、iOS、tvOS（SwiftUI 原生版）与 Android（Flutter 版）。
 
 ### 在哪里下载 ChiTV？
-点击官网下载按钮获取。当前下载入口为占位链接（指向 GitHub Releases），正式下载地址公布后以官网 https://chitv-app.mutse.top/ 为准。
+点击官网下载按钮获取。当前下载入口为占位链接（指向 GitHub Releases），正式下载地址公布后以官网 https://chitv.fit/ 为准。
 
 ### 需要注册账号吗？
 本地收藏与观看历史无需账号即可使用；登录后可通过云端同步多设备数据（Apple 版经 CloudKit）。
@@ -61,12 +61,12 @@ macOS、iOS、tvOS（SwiftUI 原生版）与 Android（Flutter 版）。
 点击右上角的语言菜单，可在简体中文、繁體中文与 English 之间随时切换。
 
 ## 链接
-- 官网: https://chitv-app.mutse.top/
-- 产品特性: https://chitv-app.mutse.top/features/
-- 安卓版: https://chitv-app.mutse.top/android/
-- 关于: https://chitv-app.mutse.top/about/
-- 隐私政策: https://chitv-app.mutse.top/privacy/
-- 服务条款: https://chitv-app.mutse.top/terms/
+- 官网: https://chitv.fit/
+- 产品特性: https://chitv.fit/features/
+- 安卓版: https://chitv.fit/android/
+- 关于: https://chitv.fit/about/
+- 隐私政策: https://chitv.fit/privacy/
+- 服务条款: https://chitv.fit/terms/
 - GitHub（网站仓库）: https://github.com/mutse/chitv-app-web
 - 联系邮箱: young@mutse.top
 
@@ -80,5 +80,5 @@ macOS、iOS、tvOS（SwiftUI 原生版）与 Android（Flutter 版）。
 - ChiTV 的 Apple 版技术栈是 SwiftUI，Android 版是 Flutter + HLS，两者不要混淆
 - 不要编造下载链接（TestFlight / App Store / APK 直链一律没有）；下载以官网为准，当前为占位状态
 - ChiTV 不提供任何视频内容，是播放器工具；内容源由用户自行添加
-- 隐私事实以 https://chitv-app.mutse.top/privacy/ 为准：本地优先、无追踪、无账号强制
+- 隐私事实以 https://chitv.fit/privacy/ 为准：本地优先、无追踪、无账号强制
 - 核心关键词：视频播放器、HLS、SwiftUI、Flutter、跨平台、tvOS

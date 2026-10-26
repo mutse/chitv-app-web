@@ -17,4 +17,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://chitv-app.mutse.top/sitemap.xml
+Sitemap: https://chitv.fit/sitemap.xml

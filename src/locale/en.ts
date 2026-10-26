@@ -170,7 +170,7 @@ export const en: Record<string, string> = {
   'terms.s5.title': '5. Responsibilities and sync',
   'terms.s5.body': 'Do not infringe others\' rights, bypass content access controls or interfere with services. Third-party providers are responsible for their content and service operation. Optional iCloud sync depends on your Apple account, connectivity and service availability and is not a substitute for a backup.',
   'terms.s6.title': '6. License and consumer rights',
-  'terms.s6.body': 'The app license is governed by Apple\'s Standard EULA (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/). See the Privacy Policy (https://chitv-app.mutse.top/privacy) for data practices. Contact the maintainer through young@mutse.top (mailto:young@mutse.top). These terms do not limit mandatory consumer rights under applicable law.',
+  'terms.s6.body': 'The app license is governed by Apple\'s Standard EULA (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/). See the Privacy Policy (https://chitv.fit/privacy) for data practices. Contact the maintainer through young@mutse.top (mailto:young@mutse.top). These terms do not limit mandatory consumer rights under applicable law.',
   'terms.s7.title': '7. Contact',
   'terms.s7.body': 'young@mutse.top',
 }
