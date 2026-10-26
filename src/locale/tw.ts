@@ -170,7 +170,7 @@ export const tw: Record<string, string> = {
   'terms.s5.title': '5. 用戶責任與同步',
   'terms.s5.body': '請勿使用應用侵犯他人權利、規避內容訪問控制或干擾服務。第三方片源的內容、合法性及可靠性由相應提供方負責。iCloud 同步為可選功能，依賴 Apple 賬戶、網絡及服務可用性，不能替代備份。',
   'terms.s6.title': '6. 許可與消費者權利',
-  'terms.s6.body': '應用許可適用 Apple 標準最終用戶許可協議 (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。個人數據處理見隱私政策 (https://chitv-app.mutse.top/privacy)。如需幫助，請通過 young@mutse.top (mailto:young@mutse.top) 聯繫維護者。本條款不限制適用法律賦予你的強制性消費者權利。',
+  'terms.s6.body': '應用許可適用 Apple 標準最終用戶許可協議 (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。個人數據處理見隱私政策 (https://chitv.fit/privacy)。如需幫助，請通過 young@mutse.top (mailto:young@mutse.top) 聯繫維護者。本條款不限制適用法律賦予你的強制性消費者權利。',
   'terms.s7.title': '7. 聯繫',
   'terms.s7.body': 'young@mutse.top',
 }

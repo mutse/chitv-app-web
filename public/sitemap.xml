@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chitv-app.mutse.top/</loc>
+    <loc>https://chitv.fit/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://chitv-app.mutse.top/features/</loc>
+    <loc>https://chitv.fit/features/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chitv-app.mutse.top/android/</loc>
+    <loc>https://chitv.fit/android/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chitv-app.mutse.top/about/</loc>
+    <loc>https://chitv.fit/about/</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://chitv-app.mutse.top/privacy/</loc></url>
-  <url><loc>https://chitv-app.mutse.top/terms/</loc></url>
+  <url><loc>https://chitv.fit/privacy/</loc></url>
+  <url><loc>https://chitv.fit/terms/</loc></url>
 </urlset>
