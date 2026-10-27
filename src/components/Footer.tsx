@@ -19,7 +19,7 @@ export function Footer() {
             <p className="text-text-secondary text-sm">{t('footer.desc')}</p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-8 self-end lg:ml-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-8 self-end lg:ml-auto">
             <div>
               <h3 className="text-sm font-semibold mb-4">{t('footer.support')}</h3>
               <ul className="space-y-2">
@@ -35,12 +35,6 @@ export function Footer() {
               <ul className="space-y-2">
                 <li><Link to="/privacy" className={linkClassName}>{t('footer.privacy')}</Link></li>
                 <li><Link to="/terms" className={linkClassName}>{t('footer.terms')}</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold mb-4">{t('footer.resources')}</h3>
-              <ul className="space-y-2">
-                <li><Link to="/android" className={linkClassName}>{t('footer.android')}</Link></li>
               </ul>
             </div>
             <div>
