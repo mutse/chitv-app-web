@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import { Download, ArrowRight, Smartphone, Laptop, Tv } from 'lucide-react'
+import { Download, Smartphone, Laptop, Tv } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { ScreenshotCarousel } from './ScreenshotCarousel'
 import { DOWNLOAD_URLS } from '../config'
@@ -30,20 +29,13 @@ export function Hero() {
                   href={platform.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
+                  className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-medium px-7 py-[13px] rounded-full min-w-[158px] transition-all duration-300 hover:-translate-y-px"
                 >
                   <platform.icon className="w-5 h-5" />
                   <Download className="w-4 h-4" />
                   {platform.label}
                 </a>
               ))}
-              <Link
-                to="/features"
-                className="inline-flex items-center justify-center gap-2 border border-black/10 hover:border-primary/50 text-text-primary font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-black/5"
-              >
-                {t('hero.learnMore')}
-                <ArrowRight className="w-5 h-5" />
-              </Link>
             </div>
           </div>
 
