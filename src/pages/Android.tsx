@@ -1,4 +1,4 @@
-import { Play, Palette, Bookmark, History, Download, Search, Star, Tv } from 'lucide-react'
+import { Download } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
 import { DOWNLOAD_URLS } from '../config'
@@ -6,14 +6,14 @@ import { DOWNLOAD_URLS } from '../config'
 export function Android() {
   const { t } = useTranslation()
 
-  const features = [
-    { icon: Play, titleKey: 'android.features.player.title', descKey: 'android.features.player.desc' },
-    { icon: Palette, titleKey: 'android.features.design.title', descKey: 'android.features.design.desc' },
-    { icon: Bookmark, titleKey: 'android.features.bookmarks.title', descKey: 'android.features.bookmarks.desc' },
-    { icon: History, titleKey: 'android.features.history.title', descKey: 'android.features.history.desc' },
-    { icon: Search, titleKey: 'android.features.sources.title', descKey: 'android.features.sources.desc' },
-    { icon: Star, titleKey: 'android.features.douban.title', descKey: 'android.features.douban.desc' },
-    { icon: Tv, titleKey: 'android.features.live.title', descKey: 'android.features.live.desc' },
+  // 真机海报：竖版截图 + 海报 slogan 文案（图片本身含中文 slogan，三语页面共用）
+  const showcases = [
+    { image: '/screenshots/android-home.jpg', titleKey: 'android.showcase.home.title', descKey: 'android.showcase.home.desc' },
+    { image: '/screenshots/android-search.jpg', titleKey: 'android.showcase.search.title', descKey: 'android.showcase.search.desc' },
+    { image: '/screenshots/android-discover.jpg', titleKey: 'android.showcase.discover.title', descKey: 'android.showcase.discover.desc' },
+    { image: '/screenshots/android-favorites.jpg', titleKey: 'android.showcase.favorites.title', descKey: 'android.showcase.favorites.desc' },
+    { image: '/screenshots/android-episodes.jpg', titleKey: 'android.showcase.episodes.title', descKey: 'android.showcase.episodes.desc' },
+    { image: '/screenshots/android-live.jpg', titleKey: 'android.showcase.live.title', descKey: 'android.showcase.live.desc' },
   ]
 
   const techBadges = [
@@ -39,32 +39,30 @@ export function Android() {
         </div>
       </section>
 
-      {/* Feature Details - Alternating Layout */}
+      {/* Showcase - Alternating Layout */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
-          {features.map((feature, index) => {
+          {showcases.map((showcase, index) => {
             const isReversed = index % 2 === 1
             return (
               <div
-                key={feature.titleKey}
+                key={showcase.titleKey}
                 className={`flex flex-col md:flex-row items-center gap-12 ${isReversed ? 'md:flex-row-reverse' : ''
                   }`}
               >
-                {/* Visual */}
-                <div className="flex-1 w-full">
-                  <div className="bg-surface rounded-2xl p-8 border border-black/5 aspect-video flex items-center justify-center">
-                    <feature.icon className="w-20 h-20 text-primary/30" />
-                  </div>
+                {/* Poster */}
+                <div className="flex-1 w-full flex justify-center">
+                  <img
+                    src={showcase.image}
+                    alt={t(showcase.titleKey)}
+                    loading="lazy"
+                    className="w-full max-w-[280px] rounded-2xl border border-black/5 shadow-lg"
+                  />
                 </div>
                 {/* Text */}
                 <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <feature.icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <h2 className="text-2xl font-bold">{t(feature.titleKey)}</h2>
-                  </div>
-                  <p className="text-text-secondary leading-relaxed">{t(feature.descKey)}</p>
+                  <h2 className="text-2xl font-bold mb-4">{t(showcase.titleKey)}</h2>
+                  <p className="text-text-secondary leading-relaxed">{t(showcase.descKey)}</p>
                 </div>
               </div>
             )
