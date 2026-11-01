@@ -100,8 +100,7 @@ export function Android() {
               <p className="text-text-secondary text-lg mb-8 max-w-xl mx-auto">{t('android.cta.subtitle')}</p>
               <a
                 href={DOWNLOAD_URLS.android}
-                target="_blank"
-                rel="noopener noreferrer"
+                download
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 backdrop-blur-sm"
               >
                 <Download className="w-5 h-5" />

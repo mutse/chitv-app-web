@@ -72,8 +72,8 @@ export const tw: Record<string, string> = {
   'android.tech.title': '技術亮點',
   'android.tech.subtitle': 'Flutter 跨平台技術棧，為安卓深度優化',
   'android.cta.title': '下載 ChiTV 安卓版',
-  'android.cta.subtitle': '在 GitHub Releases 獲取最新 APK，免費使用',
-  'android.cta.button': '前往下載',
+  'android.cta.subtitle': '下載 APK，免費使用',
+  'android.cta.button': '下載 APK',
   // About
   'about.title': '關於 ChiTV',
   'about.subtitle': '讓每個人都能享受優質的視頻內容',

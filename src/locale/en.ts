@@ -72,8 +72,8 @@ export const en: Record<string, string> = {
   'android.tech.title': 'Tech Highlights',
   'android.tech.subtitle': 'A Flutter tech stack, tuned for Android',
   'android.cta.title': 'Download ChiTV for Android',
-  'android.cta.subtitle': 'Get the latest APK from GitHub Releases, free to use',
-  'android.cta.button': 'Get the App',
+  'android.cta.subtitle': 'Download the APK, free to use',
+  'android.cta.button': 'Download APK',
   // About
   'about.title': 'About ChiTV',
   'about.subtitle': 'Making quality video content accessible to everyone',
