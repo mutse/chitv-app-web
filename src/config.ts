@@ -14,5 +14,5 @@ export const DOWNLOAD_URLS = {
   ios: `${GITHUB_URL}/releases`,
   macos: `${GITHUB_URL}/releases`,
   tvos: `${GITHUB_URL}/releases`,
-  android: '/download/chitv-app-release.apk',
+  android: 'https://pub-1758bf0f58e54a7fbf4d5a802100d854.r2.dev/chitv-app-release.apk',
 } as const
