@@ -35,7 +35,12 @@ export function Releases() {
               </a>
             </article>
             <article className="rounded-2xl border border-black/10 bg-surface p-6 sm:p-8">
-              <h2 className="text-2xl font-bold mb-6">v0.1.3</h2>
+              <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+                <h2 className="text-2xl font-bold">v0.1.3</h2>
+                <time dateTime="2026-11-01" className="text-sm text-text-secondary">
+                  {new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'tw' ? 'zh-TW' : 'en', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-01T00:00:00Z'))}
+                </time>
+              </div>
               <ul className="list-disc pl-5 space-y-3 text-text-secondary leading-relaxed">
                 {Array.from({ length: 30 }, (_, index) => index + 1).map((item) => (
                   <li key={item}>{t(`releases.android.013.${item}`)}</li>
