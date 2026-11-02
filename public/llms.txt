@@ -37,7 +37,7 @@ ChiTV 是一款跨平台视频流媒体应用。Apple 平台（macOS、iOS、tvO
 - 服务条款: https://chitv.fit/terms/
 
 ## 下载
-- 下载地址尚未最终公布，目前官网下载入口指向 GitHub 仓库 Releases 页占位：https://github.com/mutse/chitv-app-web/releases
+- 下载地址尚未最终公布，目前官网下载入口指向 GitHub 仓库 Releases 页占位：https://github.com/mutse/chitv-app/releases
 - Android APK 同样待发布，以官网为准
 
 ## 常见问题
@@ -67,8 +67,8 @@ macOS、iOS、tvOS（SwiftUI 原生版）与 Android（Flutter 版）。
 - 关于: https://chitv.fit/about/
 - 隐私政策: https://chitv.fit/privacy/
 - 服务条款: https://chitv.fit/terms/
-- GitHub（网站仓库）: https://github.com/mutse/chitv-app-web
-- 联系邮箱: young@mutse.top
+- GitHub（网站仓库）: https://github.com/mutse/chitv-app
+- 联系邮箱: hi@chitv.fit
 
 ## 更新记录
 - 2026-10-20：官网完成 SEO/GEO 优化（多语言、结构化数据、站内搜索友好）

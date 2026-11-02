@@ -198,7 +198,7 @@ export const zh: Record<string, string> = {
   'privacy.s4.title': '4. 购买、跟踪与广告',
   'privacy.s4.body': '购买和恢复购买通过 Apple StoreKit 完成。应用读取经验证的交易、商品、到期和撤销状态以确定权益，不接收支付卡号。当前版本不集成第三方广告或分析 SDK，不进行跨应用跟踪，也不出售个人数据。',
   'privacy.s5.title': '5. 你的选择',
-  'privacy.s5.body': '你可以在应用中管理片源、清空观看或搜索历史、移除收藏，并选择是否开启 iCloud 同步。主动导出的配置文件可能包含片源地址和设置，请妥善保管。通过 young@mutse.top (mailto:young@mutse.top) 联系维护者时，请勿发送含令牌的地址、密码或私人观看记录。',
+  'privacy.s5.body': '你可以在应用中管理片源、清空观看或搜索历史、移除收藏，并选择是否开启 iCloud 同步。主动导出的配置文件可能包含片源地址和设置，请妥善保管。通过 hi@chitv.fit (mailto:hi@chitv.fit) 联系维护者时，请勿发送含令牌的地址、密码或私人观看记录。',
   'privacy.s6.title': '6. 政策更新',
   'privacy.s6.body': '更新政策时会在本页面标示新的日期。',
   'privacy.s7.title': '7. 联系',
@@ -217,7 +217,7 @@ export const zh: Record<string, string> = {
   'terms.s5.title': '5. 用户责任与同步',
   'terms.s5.body': '请勿使用应用侵犯他人权利、规避内容访问控制或干扰服务。第三方片源的内容、合法性及可靠性由相应提供方负责。iCloud 同步为可选功能，依赖 Apple 账户、网络及服务可用性，不能替代备份。',
   'terms.s6.title': '6. 许可与消费者权利',
-  'terms.s6.body': '应用许可适用 Apple 标准最终用户许可协议 (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。个人数据处理见隐私政策 (https://chitv.fit/privacy)。如需帮助，请通过 young@mutse.top (mailto:young@mutse.top) 联系维护者。本条款不限制适用法律赋予你的强制性消费者权利。',
+  'terms.s6.body': '应用许可适用 Apple 标准最终用户许可协议 (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。个人数据处理见隐私政策 (https://chitv.fit/privacy)。如需帮助，请通过 hi@chitv.fit (mailto:hi@chitv.fit) 联系维护者。本条款不限制适用法律赋予你的强制性消费者权利。',
   'terms.s7.title': '7. 联系',
   'terms.s7.body': 'hi@chitv.fit',
 }

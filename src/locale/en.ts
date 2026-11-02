@@ -198,7 +198,7 @@ export const en: Record<string, string> = {
   'privacy.s4.title': '4. Purchases, tracking and advertising',
   'privacy.s4.body': 'Apple StoreKit handles purchases and restoration. The app reads verified transaction, product, expiration and revocation information to determine entitlements; it does not receive payment card numbers. This version integrates no third-party advertising or analytics SDK, performs no cross-app tracking and does not sell personal data.',
   'privacy.s5.title': '5. Your choices',
-  'privacy.s5.body': 'You can manage sources, clear watch or search history, remove favorites, and choose whether to enable iCloud sync. Configuration files you export may contain source URLs and settings; keep them secure. Contact the maintainer through young@mutse.top (mailto:young@mutse.top). Do not send token-bearing URLs, passwords or private viewing records.',
+  'privacy.s5.body': 'You can manage sources, clear watch or search history, remove favorites, and choose whether to enable iCloud sync. Configuration files you export may contain source URLs and settings; keep them secure. Contact the maintainer through hi@chitv.fit (mailto:hi@chitv.fit). Do not send token-bearing URLs, passwords or private viewing records.',
   'privacy.s6.title': '6. Policy updates',
   'privacy.s6.body': 'Policy updates will be posted on this page with an updated date.',
   'privacy.s7.title': '7. Contact',
@@ -217,7 +217,7 @@ export const en: Record<string, string> = {
   'terms.s5.title': '5. Responsibilities and sync',
   'terms.s5.body': 'Do not infringe others\' rights, bypass content access controls or interfere with services. Third-party providers are responsible for their content and service operation. Optional iCloud sync depends on your Apple account, connectivity and service availability and is not a substitute for a backup.',
   'terms.s6.title': '6. License and consumer rights',
-  'terms.s6.body': 'The app license is governed by Apple\'s Standard EULA (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/). See the Privacy Policy (https://chitv.fit/privacy) for data practices. Contact the maintainer through young@mutse.top (mailto:young@mutse.top). These terms do not limit mandatory consumer rights under applicable law.',
+  'terms.s6.body': 'The app license is governed by Apple\'s Standard EULA (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/). See the Privacy Policy (https://chitv.fit/privacy) for data practices. Contact the maintainer through hi@chitv.fit (mailto:hi@chitv.fit). These terms do not limit mandatory consumer rights under applicable law.',
   'terms.s7.title': '7. Contact',
   'terms.s7.body': 'hi@chitv.fit',
 }

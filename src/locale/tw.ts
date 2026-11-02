@@ -198,7 +198,7 @@ export const tw: Record<string, string> = {
   'privacy.s4.title': '4. 購買、跟蹤與廣告',
   'privacy.s4.body': '購買和恢復購買通過 Apple StoreKit 完成。應用讀取經驗證的交易、商品、到期和撤銷狀態以確定權益，不接收支付卡號。當前版本不集成第三方廣告或分析 SDK，不進行跨應用跟蹤，也不出售個人數據。',
   'privacy.s5.title': '5. 你的選擇',
-  'privacy.s5.body': '你可以在應用中管理片源、清空觀看或搜索歷史、移除收藏，並選擇是否開啓 iCloud 同步。主動導出的配置文件可能包含片源地址和設置，請妥善保管。通過 young@mutse.top (mailto:young@mutse.top) 聯繫維護者時，請勿發送含令牌的地址、密碼或私人觀看記錄。',
+  'privacy.s5.body': '你可以在應用中管理片源、清空觀看或搜索歷史、移除收藏，並選擇是否開啓 iCloud 同步。主動導出的配置文件可能包含片源地址和設置，請妥善保管。通過 hi@chitv.fit (mailto:hi@chitv.fit) 聯繫維護者時，請勿發送含令牌的地址、密碼或私人觀看記錄。',
   'privacy.s6.title': '6. 政策更新',
   'privacy.s6.body': '更新政策時會在本頁面標示新的日期。',
   'privacy.s7.title': '7. 聯繫',
@@ -217,7 +217,7 @@ export const tw: Record<string, string> = {
   'terms.s5.title': '5. 用戶責任與同步',
   'terms.s5.body': '請勿使用應用侵犯他人權利、規避內容訪問控制或干擾服務。第三方片源的內容、合法性及可靠性由相應提供方負責。iCloud 同步為可選功能，依賴 Apple 賬戶、網絡及服務可用性，不能替代備份。',
   'terms.s6.title': '6. 許可與消費者權利',
-  'terms.s6.body': '應用許可適用 Apple 標準最終用戶許可協議 (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。個人數據處理見隱私政策 (https://chitv.fit/privacy)。如需幫助，請通過 young@mutse.top (mailto:young@mutse.top) 聯繫維護者。本條款不限制適用法律賦予你的強制性消費者權利。',
+  'terms.s6.body': '應用許可適用 Apple 標準最終用戶許可協議 (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。個人數據處理見隱私政策 (https://chitv.fit/privacy)。如需幫助，請通過 hi@chitv.fit (mailto:hi@chitv.fit) 聯繫維護者。本條款不限制適用法律賦予你的強制性消費者權利。',
   'terms.s7.title': '7. 聯繫',
   'terms.s7.body': 'hi@chitv.fit',
 }
