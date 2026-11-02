@@ -1,3 +1,4 @@
+import { Releases } from './pages/Releases'
 // 预渲染入口：仅在 Node SSR 环境下使用，不会打进客户端 bundle。
 // 路由结构与 src/App.tsx 保持一致；页面直接 import（不用 lazy，避免 SSR 悬空）。
 import { renderToString } from 'react-dom/server'
@@ -22,7 +23,9 @@ export function render(url: string): string {
             <Route index element={<Home />} />
             <Route path="features" element={<Features />} />
             <Route path="android" element={<Android />} />
-            <Route path="about" element={<About />} />
+            <Route path="releases" element={<Releases />} />
+              <Route path="android/releases" element={<Releases />} />
+              <Route path="about" element={<About />} />
             <Route path="privacy" element={<Privacy />} />
             <Route path="terms" element={<Terms />} />
             <Route path="*" element={<NotFound />} />

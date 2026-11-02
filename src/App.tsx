@@ -1,3 +1,4 @@
+import { Releases } from './pages/Releases'
 import { Suspense, lazy } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { I18nProvider } from './i18n/I18nProvider'
@@ -23,6 +24,8 @@ export function App() {
               <Route index element={<Home />} />
               <Route path="features" element={<Features />} />
               <Route path="android" element={<Android />} />
+              <Route path="releases" element={<Releases />} />
+              <Route path="android/releases" element={<Releases />} />
               <Route path="about" element={<About />} />
               <Route path="privacy" element={<Privacy />} />
               <Route path="terms" element={<Terms />} />

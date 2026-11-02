@@ -28,6 +28,8 @@ const routes = {
   '/': { file: 'index.html', titleKey: 'meta.home.title', descKey: 'meta.home.desc' },
   '/features': { file: 'features/index.html', titleKey: 'meta.features.title', descKey: 'meta.features.desc' },
   '/android': { file: 'android/index.html', titleKey: 'meta.android.title', descKey: 'meta.android.desc' },
+  '/releases': { file: 'releases/index.html', titleKey: 'releases.title', descKey: 'releases.description.apple' },
+  '/android/releases': { file: 'android/releases/index.html', titleKey: 'releases.title', descKey: 'releases.description.android' },
   '/about': { file: 'about/index.html', titleKey: 'meta.about.title', descKey: 'meta.about.desc' },
   '/privacy': { file: 'privacy/index.html', titleKey: 'meta.privacy.title', descKey: 'meta.privacy.desc' },
   '/terms': { file: 'terms/index.html', titleKey: 'meta.terms.title', descKey: 'meta.terms.desc' },

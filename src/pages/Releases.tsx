@@ -1,0 +1,43 @@
+import { useLocation } from 'react-router-dom'
+import { PageMeta } from '../components/PageMeta'
+import { useTranslation } from '../i18n/useTranslation'
+import { CHANGELOG_URL } from '../config'
+
+export function Releases() {
+  const { t, locale } = useTranslation()
+  const { pathname } = useLocation()
+  const android = pathname.startsWith('/android')
+  const descriptionKey = android ? 'releases.description.android' : 'releases.description.apple'
+  const platform = android ? 'Android' : 'Apple'
+
+  return (
+    <>
+      <PageMeta titleKey="releases.title" descKey={descriptionKey} />
+      <section className="pt-32 pb-20 px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-primary font-medium mb-3">{platform}</p>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">{t('releases.title')}</h1>
+          <p className="text-text-secondary text-lg mb-12">{t(descriptionKey)}</p>
+          {android ? (
+            <article className="rounded-2xl border border-black/10 bg-surface p-6 sm:p-8">
+              <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+                <h2 className="text-2xl font-bold">v0.1.4</h2>
+                <time dateTime="2026-11-02" className="text-sm text-text-secondary">
+                  {new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'tw' ? 'zh-TW' : 'en', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-02T00:00:00Z'))}
+                </time>
+              </div>
+              <ul className="list-disc pl-5 space-y-3 text-text-secondary leading-relaxed">
+                {[1, 2, 3, 4].map((item) => <li key={item}>{t(`releases.android.014.${item}`)}</li>)}
+              </ul>
+              <a href={`${CHANGELOG_URL}/tag/v0.1.4`} target="_blank" rel="noopener noreferrer" className="inline-block mt-8 text-primary underline underline-offset-4">
+                {t('releases.source')}
+              </a>
+            </article>
+          ) : (
+            <p className="rounded-2xl border border-black/10 bg-surface p-8 text-text-secondary">{t('releases.empty')}</p>
+          )}
+        </div>
+      </section>
+    </>
+  )
+}

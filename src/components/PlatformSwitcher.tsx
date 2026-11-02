@@ -11,11 +11,12 @@ const platforms = [
 
 export function PlatformSwitcher() {
   const location = useLocation()
+  const isReleases = /\/releases\/?$/.test(location.pathname)
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
   const current =
-    location.pathname === '/android' || location.pathname === '/android/'
+    location.pathname.startsWith('/android')
       ? 'Android'
       : 'Apple'
 
@@ -71,7 +72,7 @@ export function PlatformSwitcher() {
               return (
                 <Link
                   key={platform.to}
-                  to={platform.to}
+                  to={isReleases ? (platform.label === 'Android' ? '/android/releases' : '/releases') : platform.to}
                   role="menuitem"
                   onClick={() => setOpen(false)}
                   className={`block w-full rounded-lg px-4 py-2 text-left text-sm transition-colors duration-300 ${
