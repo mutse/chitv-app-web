@@ -19,6 +19,7 @@ export function Releases() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">{t('releases.title')}</h1>
           <p className="text-text-secondary text-lg mb-12">{t(descriptionKey)}</p>
           {android ? (
+            <div className="space-y-8">
             <article className="rounded-2xl border border-black/10 bg-surface p-6 sm:p-8">
               <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
                 <h2 className="text-2xl font-bold">v0.1.4</h2>
@@ -33,6 +34,15 @@ export function Releases() {
                 {t('releases.source')}
               </a>
             </article>
+            <article className="rounded-2xl border border-black/10 bg-surface p-6 sm:p-8">
+              <h2 className="text-2xl font-bold mb-6">v0.1.3</h2>
+              <ul className="list-disc pl-5 space-y-3 text-text-secondary leading-relaxed">
+                {Array.from({ length: 30 }, (_, index) => index + 1).map((item) => (
+                  <li key={item}>{t(`releases.android.013.${item}`)}</li>
+                ))}
+              </ul>
+            </article>
+            </div>
           ) : (
             <p className="rounded-2xl border border-black/10 bg-surface p-8 text-text-secondary">{t('releases.empty')}</p>
           )}
