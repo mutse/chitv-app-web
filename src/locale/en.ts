@@ -116,6 +116,11 @@ export const en: Record<string, string> = {
   'android.cta.button': 'Download APK',
   'android.cta.official': 'Official APK Download',
   'android.cta.github': 'GitHub APK Download',
+  'android.guide.title': 'Video Source Setup',
+  'android.guide.step1': 'Open the "My -> Source Management" page',
+  'android.guide.step2': 'Tap the "Add" button',
+  'android.guide.step3': 'In the "Add Source" dialog, fill in "Name" and "API URL" (only VOD or CMS sources are supported, e.g. https://cms-provide.mutse.top/api.php/provide/vod/)',
+  'android.guide.step4': 'Tap "Save" to finish',
   // About
   'about.title': 'About ChiTV',
   'about.subtitle': 'Making quality video content accessible to everyone',
