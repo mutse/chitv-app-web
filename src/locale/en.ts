@@ -53,8 +53,6 @@ export const en: Record<string, string> = {
   'cta.tvos': 'tvOS',
   'cta.android': 'Android',
   // Android page
-  'android.hero.title': 'Found a gem! Never hunt for sources again',
-  'android.hero.subtitle': 'Douban trending at a glance · resumes where you left off · live TV in one tap',
   'android.hero.desc': 'ChiTV is a video streaming app built with Flutter/Dart, supporting on-demand playback from VOD/CMS sources and live TV from live sources, for the ultimate viewing experience.',
   'android.showcase.home.title': 'A binge-watcher\'s secret weapon',
   'android.showcase.home.desc': 'Douban trending on the home screen, browsable by category; Continue Watching picks up right where you left off.',

@@ -53,8 +53,6 @@ export const tw: Record<string, string> = {
   'cta.tvos': 'tvOS 下載',
   'cta.android': 'Android 下載',
   // Android page
-  'android.hero.title': '挖到寶了！追劇再也不用找資源',
-  'android.hero.subtitle': '豆瓣熱榜隨手翻 · 看到哪兒記到哪兒 · 直播一秒切',
   'android.hero.desc': 'ChiTV 是一款基於 Flutter/Dart 構建的視頻流媒體應用，支持 vod/cms 源視頻點播和直播源直播，為您帶來極致的觀看體驗。',
   'android.showcase.home.title': '追劇黨私藏神器',
   'android.showcase.home.desc': '首頁豆瓣熱門隨手翻，電影、劇集按分類瀏覽；繼續觀看回到上次離開的地方，斷點秒續看。',

@@ -32,11 +32,7 @@ export function Android() {
       {/* Page Hero */}
       <section className="pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-            <span className="gradient-text">{t('android.hero.title')}</span>
-          </h1>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">{t('android.hero.subtitle')}</p>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto mt-6">{t('android.hero.desc')}</p>
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto">{t('android.hero.desc')}</p>
           <div className="mt-8">
             <a
               href={DOWNLOAD_URLS.android}
