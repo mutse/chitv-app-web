@@ -57,28 +57,34 @@ export function PlatformSwitcher() {
       </button>
 
       {open && (
-        <div
-          role="menu"
-          className="absolute left-0 top-full mt-2 w-36 rounded-xl border border-black/5 bg-surface p-1.5 shadow-lg"
-        >
-          {platforms.map((platform) => {
-            const isCurrent = platform.label === current
-            return (
-              <Link
-                key={platform.to}
-                to={platform.to}
-                role="menuitem"
-                onClick={() => setOpen(false)}
-                className={`block w-full rounded-lg px-4 py-2 text-left text-sm transition-colors duration-300 ${
-                  isCurrent
-                    ? 'bg-primary/10 font-medium text-primary'
-                    : 'text-text-secondary hover:bg-black/5 hover:text-primary'
-                }`}
-              >
-                {platform.label}
-              </Link>
-            )
-          })}
+        // 注意：这里必须用 pt-2 内边距桥接，不能用 mt-2 外边距——
+        // 外边距会在按钮与面板之间留出 8px 不属于任何元素的空隙，
+        // 鼠标移过空隙时触发 wrapper 的 onMouseLeave，菜单提前卸载，远处菜单项点不上。
+        // 内边距属于容器自身的盒子，鼠标全程都在后代元素内，悬停链路不断。
+        <div className="absolute left-0 top-full w-36 pt-2">
+          <div
+            role="menu"
+            className="rounded-xl border border-black/5 bg-surface p-1.5 shadow-lg"
+          >
+            {platforms.map((platform) => {
+              const isCurrent = platform.label === current
+              return (
+                <Link
+                  key={platform.to}
+                  to={platform.to}
+                  role="menuitem"
+                  onClick={() => setOpen(false)}
+                  className={`block w-full rounded-lg px-4 py-2 text-left text-sm transition-colors duration-300 ${
+                    isCurrent
+                      ? 'bg-primary/10 font-medium text-primary'
+                      : 'text-text-secondary hover:bg-black/5 hover:text-primary'
+                  }`}
+                >
+                  {platform.label}
+                </Link>
+              )
+            })}
+          </div>
         </div>
       )}
     </div>
