@@ -1,7 +1,7 @@
 export const en: Record<string, string> = {
-  'releases.android.013.1': 'Unify Live TV and live source management backgrounds with the ChiTvBackground gradient.',
+  'releases.android.013.1': 'Unify Live TV and live source management backgrounds with the ChiTV Background gradient.',
   'releases.android.013.2': 'Fix unsaved text in settings input fields being lost during rebuilds.',
-  'releases.android.013.3': 'Unify the image pipeline with the new ChiTvPosterImage component.',
+  'releases.android.013.3': 'Unify the image pipeline with the new ChiTV PosterImage component.',
   'releases.android.013.4': 'P1: Narrow rebuild scopes and eliminate frequent whole-tree rebuilds.',
   'releases.android.013.5': 'Refactor: Split AppController into seven domain controllers while keeping the facade API unchanged.',
   'releases.android.013.6': 'Perf/p1 narrow rebuilds',
@@ -202,7 +202,7 @@ export const en: Record<string, string> = {
   'privacy.s6.title': '6. Policy updates',
   'privacy.s6.body': 'Policy updates will be posted on this page with an updated date.',
   'privacy.s7.title': '7. Contact',
-  'privacy.s7.body': 'young@mutse.top',
+  'privacy.s7.body': 'hi@chitv.fit',
   'terms.title': 'Terms of Service',
   'terms.updated': 'Last updated: October 19, 2026',
   'terms.intro': 'These terms apply to the current ChiTV Player iOS/tvOS release.',
@@ -219,5 +219,5 @@ export const en: Record<string, string> = {
   'terms.s6.title': '6. License and consumer rights',
   'terms.s6.body': 'The app license is governed by Apple\'s Standard EULA (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/). See the Privacy Policy (https://chitv.fit/privacy) for data practices. Contact the maintainer through young@mutse.top (mailto:young@mutse.top). These terms do not limit mandatory consumer rights under applicable law.',
   'terms.s7.title': '7. Contact',
-  'terms.s7.body': 'young@mutse.top',
+  'terms.s7.body': 'hi@chitv.fit',
 }

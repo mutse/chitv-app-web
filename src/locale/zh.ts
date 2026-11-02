@@ -1,7 +1,7 @@
 export const zh: Record<string, string> = {
-  'releases.android.013.1': '直播页与直播源管理页背景统一为 ChiTvBackground 渐变',
+  'releases.android.013.1': '直播页与直播源管理页背景统一为 ChiTV Background 渐变',
   'releases.android.013.2': '修复 settings 输入框被 rebuild 吞掉未保存文字',
-  'releases.android.013.3': '统一图片管线：新增 ChiTvPosterImage 组件',
+  'releases.android.013.3': '统一图片管线：新增 ChiTV PosterImage 组件',
   'releases.android.013.4': 'P1：收窄重建范围，根除高频整树重建',
   'releases.android.013.5': '重构：拆分 AppController 为 7 个领域控制器（门面保持 API 不变）',
   'releases.android.013.6': 'Perf/p1 narrow rebuilds',
@@ -202,7 +202,7 @@ export const zh: Record<string, string> = {
   'privacy.s6.title': '6. 政策更新',
   'privacy.s6.body': '更新政策时会在本页面标示新的日期。',
   'privacy.s7.title': '7. 联系',
-  'privacy.s7.body': 'young@mutse.top',
+  'privacy.s7.body': 'hi@chitv.fit',
   'terms.title': '服务条款',
   'terms.updated': '最后更新：2026 年 10 月 19 日',
   'terms.intro': '以下条款适用于当前 ChiTV Player iOS/tvOS 上架版本。',
@@ -219,5 +219,5 @@ export const zh: Record<string, string> = {
   'terms.s6.title': '6. 许可与消费者权利',
   'terms.s6.body': '应用许可适用 Apple 标准最终用户许可协议 (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)。个人数据处理见隐私政策 (https://chitv.fit/privacy)。如需帮助，请通过 young@mutse.top (mailto:young@mutse.top) 联系维护者。本条款不限制适用法律赋予你的强制性消费者权利。',
   'terms.s7.title': '7. 联系',
-  'terms.s7.body': 'young@mutse.top',
+  'terms.s7.body': 'hi@chitv.fit',
 }
