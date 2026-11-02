@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from '../i18n/useTranslation'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { MobileNav } from './MobileNav'
+import { PlatformSwitcher } from './PlatformSwitcher'
 
 export function Header() {
   const { t } = useTranslation()
@@ -30,10 +31,13 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2 group">
-            <img src="/logo.png" alt="ChiTV" className="w-8 h-8 rounded-lg transition-transform duration-300 group-hover:scale-110" />
-            <span className="text-xl font-bold">ChiTV</span>
-          </Link>
+          <div className="flex items-center gap-1">
+            <Link to="/" className="flex items-center gap-2 group">
+              <img src="/logo.png" alt="ChiTV" className="w-8 h-8 rounded-lg transition-transform duration-300 group-hover:scale-110" />
+              <span className="text-xl font-bold">ChiTV</span>
+            </Link>
+            <PlatformSwitcher />
+          </div>
 
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
