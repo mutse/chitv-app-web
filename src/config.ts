@@ -6,7 +6,7 @@ export const SITE_URL = 'https://chitv.fit'
 export const GITHUB_URL = 'https://github.com/mutse/chitv-app-web'
 
 // 更新日志指向发布仓 chitv-app（Release 实际所在地）；
-// 关于页 GitHub 按钮指向主项目仓 chitv。
+// 关于页 GitHub 按钮指向主项目仓 chitv-app。
 // 注意：GITHUB_URL 仍是本站仓库，供 iOS/macOS/tvOS 下载占位链接使用，不要改动。
 export const CHANGELOG_URL = 'https://github.com/mutse/chitv-app/releases'
 export const PROJECT_GITHUB_URL = 'https://github.com/mutse/chitv-app'
