@@ -121,6 +121,11 @@ export const en: Record<string, string> = {
   'android.guide.step2': 'Tap the "Add" button',
   'android.guide.step3': 'In the "Add Source" dialog, fill in "Name" and "API URL" (only VOD or CMS sources are supported, e.g. https://cms-provide.mutse.top/api.php/provide/vod/)',
   'android.guide.step4': 'Tap "Save" to finish',
+  'android.liveGuide.title': 'Live Source Setup',
+  'android.liveGuide.step1': 'Open the "My -> Live Source Management" page',
+  'android.liveGuide.step2': 'Tap the "+" button in the top-right corner',
+  'android.liveGuide.step3': 'In the "Add Live Source" dialog, fill in "Name" and "M3U Subscription URL"',
+  'android.liveGuide.step4': 'Tap "Save" to finish',
   // About
   'about.title': 'About ChiTV',
   'about.subtitle': 'Making quality video content accessible to everyone',

@@ -121,6 +121,11 @@ export const tw: Record<string, string> = {
   'android.guide.step2': '點擊“添加”按鈕',
   'android.guide.step3': '在“新增視頻源”對話框填入“名稱”和“API URL”（只支持 vod 或 cms 源，例如 https://cms-provide.mutse.top/api.php/provide/vod/）',
   'android.guide.step4': '點擊“保存”按鈕即可',
+  'android.liveGuide.title': '直播源設置',
+  'android.liveGuide.step1': '打開“我的->直播源管理”頁面',
+  'android.liveGuide.step2': '點擊右上角“+”按鈕',
+  'android.liveGuide.step3': '在“添加直播源”對話框填入“名稱”和“M3U 訂閱地址”',
+  'android.liveGuide.step4': '點擊“保存”按鈕即可',
   // About
   'about.title': '關於 ChiTV',
   'about.subtitle': '讓每個人都能享受優質的視頻內容',
