@@ -116,6 +116,11 @@ export const tw: Record<string, string> = {
   'android.cta.button': '下載 APK',
   'android.cta.official': '官網下載 APK',
   'android.cta.github': 'GitHub 下載 APK',
+  'android.guide.title': '視頻源設置',
+  'android.guide.step1': '打開“我的->視頻源管理”頁面',
+  'android.guide.step2': '點擊“添加”按鈕',
+  'android.guide.step3': '在“新增視頻源”對話框填入“名稱”和“API URL”（只支持 vod 或 cms 源，例如 https://cms-provide.mutse.top/api.php/provide/vod/）',
+  'android.guide.step4': '點擊“保存”按鈕即可',
   // About
   'about.title': '關於 ChiTV',
   'about.subtitle': '讓每個人都能享受優質的視頻內容',

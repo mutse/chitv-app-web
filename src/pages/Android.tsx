@@ -2,6 +2,7 @@ import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
 import { AndroidShowcase } from '../components/AndroidShowcase'
 import { AndroidDownload } from '../components/AndroidDownload'
+import { AndroidGuide } from '../components/AndroidGuide'
 
 export function Android() {
   const { t } = useTranslation()
@@ -20,6 +21,8 @@ export function Android() {
       </section>
 
       <AndroidShowcase />
+
+      <AndroidGuide />
 
     </>
   )
