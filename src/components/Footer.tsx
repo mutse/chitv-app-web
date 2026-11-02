@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from '../i18n/useTranslation'
-import { CONTACT_EMAIL, GITHUB_URL, TWITTER_URL, TELEGRAM_URL } from '../config'
+import { CONTACT_EMAIL, CHANGELOG_URL, TWITTER_URL, TELEGRAM_URL } from '../config'
 
 const linkClassName = 'text-sm text-text-secondary hover:text-primary transition-colors duration-300'
 
@@ -24,7 +24,7 @@ export function Footer() {
               <h3 className="text-sm font-semibold mb-4">{t('footer.support')}</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href={`${GITHUB_URL}/releases`} target="_blank" rel="noopener noreferrer" className={linkClassName}>
+                  <a href={CHANGELOG_URL} target="_blank" rel="noopener noreferrer" className={linkClassName}>
                     {t('footer.changelog')}
                   </a>
                 </li>
