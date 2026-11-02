@@ -1,7 +1,7 @@
 import { Github, Mail, Code2, Database, Layers, Palette } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
-import { GITHUB_URL, CONTACT_EMAIL, TELEGRAM_URL } from '../config'
+import { PROJECT_GITHUB_URL, CONTACT_EMAIL, TELEGRAM_URL } from '../config'
 
 export function About() {
   const { t } = useTranslation()
@@ -69,7 +69,7 @@ export function About() {
           <p className="text-text-secondary text-lg mb-8">{t('about.contact.desc')}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={GITHUB_URL}
+              href={PROJECT_GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-surface hover:bg-surface/80 border border-black/10 text-text-primary font-semibold px-6 py-3 rounded-lg transition-all duration-300"
