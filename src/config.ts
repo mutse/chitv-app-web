@@ -13,7 +13,7 @@ export const PROJECT_GITHUB_URL = 'https://github.com/mutse/chitv-app'
 
 export const CONTACT_EMAIL = 'hi@chitv.fit'
 
-export const TWITTER_URL = 'https://x.com/mutse_young'
+export const TWITTER_URL = 'https://x.com/chitvapp'
 export const TELEGRAM_URL = 'https://t.me/+eiCvvlxhyzowMDJh'
 
 export const DOWNLOAD_URLS = {
