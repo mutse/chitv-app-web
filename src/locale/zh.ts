@@ -55,6 +55,7 @@ export const zh: Record<string, string> = {
   // Android page
   'android.hero.title': '挖到宝了！追剧再也不用找资源',
   'android.hero.subtitle': '豆瓣热榜随手翻 · 看到哪儿记到哪儿 · 直播一秒切',
+  'android.hero.desc': 'ChiTV 是一款基于 Flutter/Dart 构建的视频流媒体应用，支持 vod/cms 源视频点播和直播源直播，为您带来极致的观看体验。',
   'android.showcase.home.title': '追剧党私藏神器',
   'android.showcase.home.desc': '首页豆瓣热门随手翻，电影、剧集按分类浏览；继续观看回到上次离开的地方，断点秒续看。',
   'android.showcase.search.title': '一个搜索框，搞定今晚看什么',
@@ -69,8 +70,6 @@ export const zh: Record<string, string> = {
   'android.showcase.live.desc': '按频道、分组或台标搜索 · 上下台快切 · 节目单随时查',
   'android.tech.title': '技术亮点',
   'android.tech.subtitle': 'Flutter 跨平台技术栈，为安卓深度优化',
-  'android.cta.title': '下载 ChiTV 安卓版',
-  'android.cta.subtitle': '下载 APK，免费使用',
   'android.cta.button': '下载 APK',
   // About
   'about.title': '关于 ChiTV',
