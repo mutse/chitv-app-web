@@ -189,7 +189,7 @@ export const zh: Record<string, string> = {
   'faq.q1': 'ChiTV 支持哪些平台？',
   'faq.a1': 'macOS、iOS、tvOS（SwiftUI 原生版）与 Android（Flutter 版）。',
   'faq.q2': '在哪里下载 ChiTV？',
-  'faq.a2': '点击官网下载按钮获取。当前下载入口为占位链接（指向 GitHub Releases），正式下载地址公布后以官网为准。',
+  'faq.a2': 'iOS 版已上架 App Store，Android 版可通过官网下载；macOS 与 tvOS 版下载链接尚未公布，当前为占位链接，正式地址公布后以官网为准。',
   'faq.q3': '需要注册账号吗？',
   'faq.a3': '本地收藏与观看历史无需账号即可使用；登录 iCloud 后可通过云端同步多设备数据（Apple 版经 CloudKit）。',
   'faq.q4': 'ChiTV 支持哪些视频格式？',
