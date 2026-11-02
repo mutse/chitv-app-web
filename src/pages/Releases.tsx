@@ -8,11 +8,14 @@ export function Releases() {
   const { pathname } = useLocation()
   const android = pathname.startsWith('/android')
   const descriptionKey = android ? 'releases.description.android' : 'releases.description.apple'
+  // 两页 <title> 各自独立（此前共用 releases.title，标题重复且无品牌后缀）；
+  // 可见 H1 仍共用 releases.title，平台由上方的 eyebrow 区分。
+  const titleKey = android ? 'releases.title.android' : 'releases.title.apple'
   const platform = android ? 'Android' : 'Apple'
 
   return (
     <>
-      <PageMeta titleKey="releases.title" descKey={descriptionKey} />
+      <PageMeta titleKey={titleKey} descKey={descriptionKey} />
       <section className="pt-32 pb-20 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <p className="text-primary font-medium mb-3">{platform}</p>

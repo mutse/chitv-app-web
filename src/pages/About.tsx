@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Github, Mail, Code2, Database, Layers, Palette } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
@@ -37,6 +38,16 @@ export function About() {
           <div>
             <h2 className="text-2xl font-bold mb-4">{t('about.vision.title')}</h2>
             <p className="text-text-secondary leading-relaxed text-lg">{t('about.vision.content')}</p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold mb-4">{t('about.android.title')}</h2>
+            <p className="text-text-secondary leading-relaxed text-lg">{t('about.android.content')}</p>
+            <Link
+              to="/android"
+              className="inline-block mt-4 text-primary underline underline-offset-4 hover:text-primary/80 transition-colors"
+            >
+              {t('about.android.link')}
+            </Link>
           </div>
         </div>
       </section>
