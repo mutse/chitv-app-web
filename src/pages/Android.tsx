@@ -1,7 +1,6 @@
-import { Download } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
-import { DOWNLOAD_URLS } from '../config'
+import { AndroidDownload } from '../components/AndroidDownload'
 
 export function Android() {
   const { t } = useTranslation()
@@ -34,14 +33,7 @@ export function Android() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">{t('android.hero.desc')}</p>
           <div className="mt-8">
-            <a
-              href={DOWNLOAD_URLS.android}
-              download
-              className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-medium px-7 py-[13px] rounded-full min-w-[158px] transition-all duration-300 hover:-translate-y-px"
-            >
-              <Download className="w-4 h-4" />
-              {t('android.cta.button')}
-            </a>
+            <AndroidDownload />
           </div>
         </div>
       </section>

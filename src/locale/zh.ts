@@ -69,6 +69,8 @@ export const zh: Record<string, string> = {
   'android.tech.title': '技术亮点',
   'android.tech.subtitle': 'Flutter 跨平台技术栈，为安卓深度优化',
   'android.cta.button': '下载 APK',
+  'android.cta.official': '官网下载 APK',
+  'android.cta.github': 'GitHub 下载 APK',
   // About
   'about.title': '关于 ChiTV',
   'about.subtitle': '让每个人都能享受优质的视频内容',
