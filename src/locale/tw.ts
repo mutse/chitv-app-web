@@ -172,6 +172,7 @@ export const tw: Record<string, string> = {
   'lang.zh': '简体中文',
   'lang.tw': '繁體中文',
   'lang.en': 'English',
+  'lang.ja': '日本語',
   // Accessibility
   'a11y.toggleMenu': '切換菜單',
   'a11y.switchLanguage': '切換語言',
@@ -203,7 +204,7 @@ export const tw: Record<string, string> = {
   'faq.q5': '觀看歷史和收藏夾保存在哪裡？',
   'faq.a5': '預設保存在本地裝置上；登入 iCloud 後可透過雲端在多裝置間同步（Apple 版經 CloudKit）。',
   'faq.q6': '如何切換介面語言？',
-  'faq.a6': '跟隨系統語言自動載入簡體中文、繁體中文和 English（預設）',
+  'faq.a6': '跟隨系統語言自動載入簡體中文、繁體中文、English 和日本語（預設）',
   'meta.privacy.title': '隱私政策 - ChiTV',
   'meta.privacy.desc': 'ChiTV Player iOS/tvOS 隱私政策：本機數據、網絡請求、可選 iCloud 同步與 Apple 購買。',
   'meta.terms.title': '服務條款 - ChiTV',
