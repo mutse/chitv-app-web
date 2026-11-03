@@ -139,7 +139,7 @@ export const tw: Record<string, string> = {
   'about.title': '關於 ChiTV',
   'about.subtitle': '讓每個人都能享受優質的視頻內容',
   'about.story.title': '項目故事',
-  'about.story.content': 'ChiTV 誕生於對優質視頻體驗的追求。受 MoonTV 項目啟發，我們使用 SwiftUI 框架從零構建了這款跨平台應用。我們相信，每個人都應該能在任何設備上享受流暢、高質量的視頻內容，而不受平台限制。',
+  'about.story.content': 'ChiTV 的名字源自日本漫畫家團體 CLAMP 的漫畫作品《Chobits》中的人型電腦小嘰（Chi）。ChiTV 誕生於對優質視頻體驗的追求。受 MoonTV 項目啟發，我們使用 SwiftUI 框架從零構建了這款跨平台應用。我們相信，每個人都應該能在任何設備上享受流暢、高質量的視頻內容，而不受平台限制。',
   'about.vision.title': '我們的願景',
   'about.vision.content': '打造一個簡潔、高效、跨平台的視頻播放解決方案。我們專注於核心觀看體驗——快速搜索、流暢播放、便捷收藏，讓技術服務於內容本身。',
   'about.android.title': 'Android 版',

@@ -139,7 +139,7 @@ export const en: Record<string, string> = {
   'about.title': 'About ChiTV',
   'about.subtitle': 'Making quality video content accessible to everyone',
   'about.story.title': 'Our Story',
-  'about.story.content': 'ChiTV was born from the pursuit of a premium video experience. Inspired by the MoonTV project, we built this cross-platform app from scratch using the SwiftUI framework. We believe everyone should enjoy smooth, high-quality video content on any device without platform restrictions.',
+  'about.story.content': 'The name ChiTV comes from Chi, the humanoid computer in Chobits, the manga by Japanese artist group CLAMP. ChiTV was born from the pursuit of a premium video experience. Inspired by the MoonTV project, we built this cross-platform app from scratch using the SwiftUI framework. We believe everyone should enjoy smooth, high-quality video content on any device without platform restrictions.',
   'about.vision.title': 'Our Vision',
   'about.vision.content': 'To create a clean, efficient, cross-platform video playback solution. We focus on the core viewing experience — fast search, smooth playback, and easy bookmarking — letting technology serve the content itself.',
   'about.android.title': 'Android Version',

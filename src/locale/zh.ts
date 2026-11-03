@@ -139,7 +139,7 @@ export const zh: Record<string, string> = {
   'about.title': '关于 ChiTV',
   'about.subtitle': '让每个人都能享受优质的视频内容',
   'about.story.title': '项目故事',
-  'about.story.content': 'ChiTV 诞生于对优质视频体验的追求。受 MoonTV 项目启发，我们使用 SwiftUI 框架从零构建了这款跨平台应用。我们相信，每个人都应该能在任何设备上享受流畅、高质量的视频内容，而不受平台限制。',
+  'about.story.content': 'ChiTV 的名字源自日本漫画家团体 CLAMP 的漫画作品《Chobits》中的人型电脑小叽（Chi）。ChiTV 诞生于对优质视频体验的追求。受 MoonTV 项目启发，我们使用 SwiftUI 框架从零构建了这款跨平台应用。我们相信，每个人都应该能在任何设备上享受流畅、高质量的视频内容，而不受平台限制。',
   'about.vision.title': '我们的愿景',
   'about.vision.content': '打造一个简洁、高效、跨平台的视频播放解决方案。我们专注于核心观看体验——快速搜索、流畅播放、便捷收藏，让技术服务于内容本身。',
   'about.android.title': 'Android 版',
