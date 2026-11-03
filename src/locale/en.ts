@@ -173,6 +173,7 @@ export const en: Record<string, string> = {
   'lang.tw': '繁體中文',
   'lang.en': 'English',
   'lang.ja': '日本語',
+  'lang.fr': 'Français',
   // Accessibility
   'a11y.toggleMenu': 'Toggle menu',
   'a11y.switchLanguage': 'Switch language',
@@ -204,7 +205,7 @@ export const en: Record<string, string> = {
   'faq.q5': 'Where are my watch history and favorites stored?',
   'faq.a5': 'On your local device by default; signing in iCloud enables cloud sync across devices (via CloudKit on Apple platforms).',
   'faq.q6': 'How do I switch the interface language?',
-  'faq.a6': 'Simplified Chinese, Traditional Chinese, English and Japanese (default) are automatically loaded based on the system language.',
+  'faq.a6': 'Simplified Chinese, Traditional Chinese, English, Japanese and French (default) are automatically loaded based on the system language.',
   'meta.privacy.title': 'Privacy Policy - ChiTV',
   'meta.privacy.desc': 'ChiTV Player iOS/tvOS privacy policy: local data, network requests, optional CloudKit sync and Apple purchases.',
   'meta.terms.title': 'Terms of Service - ChiTV',
