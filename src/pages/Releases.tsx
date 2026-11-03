@@ -52,7 +52,19 @@ export function Releases() {
             </article>
             </div>
           ) : (
-            <p className="rounded-2xl border border-black/10 bg-surface p-8 text-text-secondary">{t('releases.empty')}</p>
+            <div className="space-y-8">
+            <article className="rounded-2xl border border-black/10 bg-surface p-6 sm:p-8">
+              <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+                <h2 className="text-2xl font-bold">v1.0</h2>
+                <time dateTime="2026-11-03" className="text-sm text-text-secondary">
+                  {new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'tw' ? 'zh-TW' : 'en', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-03T00:00:00Z'))}
+                </time>
+              </div>
+              <ul className="list-disc pl-5 space-y-3 text-text-secondary leading-relaxed">
+                {[1, 2, 3, 4, 5, 6].map((item) => <li key={item}>{t(`releases.apple.1103.${item}`)}</li>)}
+              </ul>
+            </article>
+            </div>
           )}
         </div>
       </section>
