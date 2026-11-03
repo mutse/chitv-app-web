@@ -27,7 +27,7 @@ export function Releases() {
               <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
                 <h2 className="text-2xl font-bold">v0.1.4</h2>
                 <time dateTime="2026-11-02" className="text-sm text-text-secondary">
-                  {new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'tw' ? 'zh-TW' : 'en', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-02T00:00:00Z'))}
+                  {new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'tw' ? 'zh-TW' : locale === 'ja' ? 'ja' : 'en', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-02T00:00:00Z'))}
                 </time>
               </div>
               <ul className="list-disc pl-5 space-y-3 text-text-secondary leading-relaxed">
@@ -41,7 +41,7 @@ export function Releases() {
               <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
                 <h2 className="text-2xl font-bold">v0.1.3</h2>
                 <time dateTime="2026-11-01" className="text-sm text-text-secondary">
-                  {new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'tw' ? 'zh-TW' : 'en', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-01T00:00:00Z'))}
+                  {new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'tw' ? 'zh-TW' : locale === 'ja' ? 'ja' : 'en', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-01T00:00:00Z'))}
                 </time>
               </div>
               <ul className="list-disc pl-5 space-y-3 text-text-secondary leading-relaxed">
@@ -57,7 +57,7 @@ export function Releases() {
               <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
                 <h2 className="text-2xl font-bold">v1.0</h2>
                 <time dateTime="2026-11-03" className="text-sm text-text-secondary">
-                  {new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'tw' ? 'zh-TW' : 'en', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-03T00:00:00Z'))}
+                  {new Intl.DateTimeFormat(locale === 'zh' ? 'zh-CN' : locale === 'tw' ? 'zh-TW' : locale === 'ja' ? 'ja' : 'en', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-11-03T00:00:00Z'))}
                 </time>
               </div>
               <ul className="list-disc pl-5 space-y-3 text-text-secondary leading-relaxed">
