@@ -8,9 +8,10 @@ const localeLabelKey: Record<Locale, string> = {
   tw: 'lang.tw',
   en: 'lang.en',
   ja: 'lang.ja',
+  fr: 'lang.fr',
 }
 
-const locales: Locale[] = ['zh', 'tw', 'en', 'ja']
+const locales: Locale[] = ['zh', 'tw', 'en', 'ja', 'fr']
 
 export function LanguageSwitcher() {
   const { t, locale, setLocale } = useTranslation()

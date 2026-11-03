@@ -173,6 +173,7 @@ export const ja: Record<string, string> = {
   'lang.tw': '繁體中文',
   'lang.en': 'English',
   'lang.ja': '日本語',
+  'lang.fr': 'Français',
   // Accessibility
   'a11y.toggleMenu': 'メニューを切り替える',
   'a11y.switchLanguage': '言語を切り替える',
@@ -204,7 +205,7 @@ export const ja: Record<string, string> = {
   'faq.q5': '視聴履歴とお気に入りはどこに保存されますか？',
   'faq.a5': 'デフォルトではローカルデバイスに保存されます。iCloud にログインすれば、クラウド経由で複数デバイス間で同期できます（Apple 版は CloudKit 経由）。',
   'faq.q6': 'インターフェース言語はどう切り替えますか？',
-  'faq.a6': 'システム言語に応じて簡体中文、繁體中文、English、日本語が自動で切り替わります（デフォルトは English）',
+  'faq.a6': 'システム言語に応じて簡体中文、繁體中文、English、日本語、Français が自動で切り替わります（デフォルトは English）',
   'meta.privacy.title': 'プライバシーポリシー - ChiTV',
   'meta.privacy.desc': 'ChiTV Player iOS/tvOS プライバシーポリシー：ローカルデータ、ネットワークリクエスト、任意の iCloud 同期、Apple での購入について。',
   'meta.terms.title': '利用規約 - ChiTV',

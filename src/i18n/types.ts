@@ -1,4 +1,4 @@
-export type Locale = 'zh' | 'tw' | 'en' | 'ja'
+export type Locale = 'zh' | 'tw' | 'en' | 'ja' | 'fr'
 
 export interface Translations {
   [key: string]: {
@@ -6,5 +6,6 @@ export interface Translations {
     tw: string
     en: string
     ja: string
+    fr: string
   }
 }

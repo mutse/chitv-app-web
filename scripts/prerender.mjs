@@ -45,10 +45,10 @@ for (const [url, { file, titleKey, descKey, noindex }] of Object.entries(routes)
   if (appHtml.length < 500) throw new Error(`预渲染 ${url} 内容过短，可能渲染失败`)
   // canonical / OG / hreflang 统一用 trailing slash（与线上实际 URL 一致）
   const pageUrl = SITE + (url === '/' ? '/' : `${url}/`)
-  // hreflang：单 URL 四语（客户端切换），五个标签均指向本页，x-default 兜底；noindex 页跳过
+  // hreflang：单 URL 五语（客户端切换），六个标签均指向本页，x-default 兜底；noindex 页跳过
   const hreflang = noindex
     ? ''
-    : ['zh-CN', 'zh-TW', 'en', 'ja', 'x-default']
+    : ['zh-CN', 'zh-TW', 'en', 'ja', 'fr', 'x-default']
         .map((l) => `<link rel="alternate" hreflang="${l}" href="${pageUrl}" />`)
         .join('\n  ')
   let html = template
