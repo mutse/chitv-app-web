@@ -189,7 +189,7 @@ export const en: Record<string, string> = {
   'faq.q1': 'Which platforms does ChiTV support?',
   'faq.a1': 'macOS, iOS and tvOS (native SwiftUI build) plus Android (Flutter build).',
   'faq.q2': 'Where can I download ChiTV?',
-  'faq.a2': 'Use the download button on this site. Links currently point to GitHub Releases as placeholders; official links will be announced here.',
+  'faq.a2': 'The iOS version is available on the App Store and the Android version can be downloaded from this site; macOS and tvOS download links are not yet published and currently point to GitHub Releases as placeholders. Official links will be announced here.',
   'faq.q3': 'Do I need an account?',
   'faq.a3': 'No. Local favorites and watch history work without an account; signing in iCloud enables cloud sync across devices (via CloudKit on Apple platforms).',
   'faq.q4': 'What video formats does ChiTV support?',

@@ -189,7 +189,7 @@ export const tw: Record<string, string> = {
   'faq.q1': 'ChiTV 支援哪些平台？',
   'faq.a1': 'macOS、iOS、tvOS（SwiftUI 原生版）與 Android（Flutter 版）。',
   'faq.q2': '在哪裡下載 ChiTV？',
-  'faq.a2': '點擊官網下載按鈕獲取。目前下載入口為佔位連結（指向 GitHub Releases），正式下載地址公佈後以官網為準。',
+  'faq.a2': 'iOS 版已上架 App Store，Android 版可透過官網下載；macOS 與 tvOS 版下載連結尚未公佈，目前為佔位連結，正式地址公佈後以官網為準。',
   'faq.q3': '需要註冊帳號嗎？',
   'faq.a3': '本地收藏與觀看歷史無需帳號即可使用；登入 iCloud 後可透過雲端同步多裝置數據（Apple 版經 CloudKit）。',
   'faq.q4': 'ChiTV 支援哪些影片格式？',
