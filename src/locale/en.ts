@@ -155,6 +155,8 @@ export const en: Record<string, string> = {
   'about.contact.desc': 'ChiTV is an open-source project. Contributions and discussions are welcome.',
   'about.contact.telegram.title': 'Join our Telegram group',
   'about.contact.telegram.desc': 'Scan to join the ChiTV user group for tips and feedback',
+  'about.contact.wechat.title': 'Join the WeChat user group',
+  'about.contact.wechat.desc': 'Scan to join the ChiTV WeChat group for tips and feedback (QR code valid for 7 days)',
   // Footer
   'footer.support': 'Support',
   'footer.changelog': 'Changelog',

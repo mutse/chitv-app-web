@@ -155,6 +155,8 @@ export const ja: Record<string, string> = {
   'about.contact.desc': 'ChiTV はオープンソースプロジェクトです。貢献や議論を歓迎します。',
   'about.contact.telegram.title': 'Telegram ユーザーグループに参加',
   'about.contact.telegram.desc': 'QR コードをスキャンして ChiTV ユーザーグループに参加し、使い方のコツやフィードバックを共有しましょう',
+  'about.contact.wechat.title': 'WeChat ユーザーグループに参加',
+  'about.contact.wechat.desc': 'QR コードをスキャンして ChiTV WeChat グループに参加し、使い方のコツやフィードバックを共有しましょう（QR コードの有効期限は 7 日間です）',
   // Footer
   'footer.support': 'サポート',
   'footer.changelog': '更新履歴',

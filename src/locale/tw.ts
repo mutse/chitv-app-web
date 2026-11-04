@@ -155,6 +155,8 @@ export const tw: Record<string, string> = {
   'about.contact.desc': 'ChiTV 是一個開源項目，歡迎參與貢獻和交流。',
   'about.contact.telegram.title': '加入 Telegram 使用者群',
   'about.contact.telegram.desc': '掃碼加入 ChiTV 使用者群，交流使用心得與反饋',
+  'about.contact.wechat.title': '加入微信用戶群',
+  'about.contact.wechat.desc': '掃碼加入 ChiTV 微信群，交流使用心得與反饋（二維碼 7 天內有效）',
   // Footer
   'footer.support': '支援',
   'footer.changelog': '更新日誌',
