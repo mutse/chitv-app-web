@@ -52,6 +52,9 @@ export const en: Record<string, string> = {
   'releases.android.014.2': 'Publish APKs and release notes to the chitv-app repository.',
   'releases.android.014.3': 'Correct the GitHub link on the in-app About page.',
   'releases.android.014.4': 'Point in-app update checks to the correct repository.',
+  'releases.android.015.1': 'feat: Import TVBox configurations and remember subscriptions',
+  'releases.android.015.2': 'fix: Correct live M3U misclassification and support single streams',
+  'releases.android.015.3': 'fix: A positive EXTINF duration alone no longer identifies a single live stream',
   // Nav
   'nav.home': 'Home',
   'nav.features': 'Features',

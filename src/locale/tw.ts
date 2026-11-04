@@ -52,6 +52,9 @@ export const tw: Record<string, string> = {
   'releases.android.014.2': '發佈 APK 和更新說明至 chitv-app 倉庫。',
   'releases.android.014.3': '修正應用關於頁的 GitHub 連結。',
   'releases.android.014.4': '修正應用內更新檢查的倉庫地址。',
+  'releases.android.015.1': 'feat: TVBox 設定匯入與訂閱記憶',
+  'releases.android.015.2': 'fix: 修正直播 M3U 誤判並支援單串流',
+  'releases.android.015.3': 'fix: 直播單串流判定不再僅憑正數 EXTINF 時長',
   // Nav
   'nav.home': '首頁',
   'nav.features': '產品特性',
