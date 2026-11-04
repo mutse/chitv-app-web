@@ -207,7 +207,7 @@ export const fr: Record<string, string> = {
   'faq.q5': 'Où sont stockés l’historique et les favoris ?',
   'faq.a5': 'Par défaut sur votre appareil local ; connectez-vous à iCloud pour les synchroniser entre appareils via le cloud (version Apple via CloudKit).',
   'faq.q6': 'Comment changer la langue de l’interface ?',
-  'faq.a6': 'La langue de l’interface suit la langue du système et charge automatiquement le chinois simplifié, le chinois traditionnel, l’anglais, le japonais et le français (anglais par défaut)',
+  'faq.a6': 'La langue de l’interface suit la langue du système et charge automatiquement le chinois simplifié, le chinois traditionnel ou l’anglais (anglais par défaut)',
   'meta.privacy.title': 'Politique de confidentialité - ChiTV',
   'meta.privacy.desc': 'Politique de confidentialité de ChiTV Player iOS/tvOS : données locales, requêtes réseau, synchronisation iCloud optionnelle et achats Apple.',
   'meta.terms.title': 'Conditions d’utilisation - ChiTV',
