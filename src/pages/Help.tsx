@@ -2,7 +2,6 @@ import { Link, useLocation } from 'react-router-dom'
 import { Mail } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
-import { AndroidGuide } from '../components/AndroidGuide'
 import { FaqSection } from '../components/FaqSection'
 import { CONTACT_EMAIL, TELEGRAM_URL, DOWNLOAD_URLS } from '../config'
 
@@ -57,8 +56,52 @@ export function Help() {
             </div>
           </section>
 
-          {/* Android：片源与直播源配置（复用 Android 页的同一指南，单一事实来源） */}
-          <AndroidGuide />
+          {/* Android：播放源设置（一级标题，下含视频源与直播源两个二级标题；
+              步骤文案仍复用 android.guide / android.liveGuide 两组 locale 键，与 Android 页同源；
+              Android 页的 AndroidGuide 组件本身不动） */}
+          <section className="py-12">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-2xl font-bold mb-8">{t('help.android.sources.title')}</h2>
+              <div className="space-y-12">
+                <div>
+                  <h3 className="text-xl font-bold mb-6">{t('android.guide.title')}</h3>
+                  <ol className="space-y-4">
+                    {[1, 2, 3, 4].map((n) => (
+                      <li
+                        key={n}
+                        className="flex gap-4 bg-surface border border-black/5 rounded-2xl px-6 py-5"
+                      >
+                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-white font-semibold">
+                          {n}
+                        </span>
+                        <p className="text-text-secondary leading-relaxed text-lg break-words">
+                          {t(`android.guide.step${n}`)}
+                        </p>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-6">{t('android.liveGuide.title')}</h3>
+                  <ol className="space-y-4">
+                    {[1, 2, 3, 4].map((n) => (
+                      <li
+                        key={n}
+                        className="flex gap-4 bg-surface border border-black/5 rounded-2xl px-6 py-5"
+                      >
+                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-white font-semibold">
+                          {n}
+                        </span>
+                        <p className="text-text-secondary leading-relaxed text-lg break-words">
+                          {t(`android.liveGuide.step${n}`)}
+                        </p>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* Android：TVBox 订阅与应用内更新 */}
           <section className="py-12">
