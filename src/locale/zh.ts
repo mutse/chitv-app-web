@@ -271,7 +271,7 @@ export const zh: Record<string, string> = {
   'help.android.tvbox.title': '导入 TVBox 订阅',
   'help.android.tvbox.content': '支持导入 TVBox 订阅：点播只导入 type=1 的 CMS 源，直播只导入 type=0 的 M3U 源；同步时会合并新源，不会删除已有源。',
   'help.android.update.title': '应用内更新',
-  'help.android.update.content': '应用内更新检查指向 ChiTV 发布仓库，有新版本时会提示。',
+  'help.android.update.content': '应用内更新检查指向 ChiTV 发布仓库，有新版本时会提示（特别指出，v0.1.3 版本需手动安装最新版本）。',
   'help.contact.title': '还需要帮助？',
   'help.contact.content': '可以通过邮件联系维护者，或加入用户群交流。',
   'help.contact.about': '在关于页查看微信群二维码',

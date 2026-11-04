@@ -271,7 +271,7 @@ export const ja: Record<string, string> = {
   'help.android.tvbox.title': 'TVBox サブスクリプションのインポート',
   'help.android.tvbox.content': 'TVBox サブスクリプションのインポートに対応しています。オンデマンドは type=1 の CMS ソースのみ、ライブは type=0 の M3U ソースのみを取り込みます。同期時は新しいソースをマージし、既存のソースを削除しません。',
   'help.android.update.title': 'アプリ内アップデート',
-  'help.android.update.content': 'アプリ内のアップデート確認は ChiTV リリースリポジトリを参照し、新バージョンがある場合は通知します。',
+  'help.android.update.content': 'アプリ内のアップデート確認は ChiTV リリースリポジトリを参照し、新バージョンがある場合は通知します。v0.1.3 をお使いの場合は、最新版を手動でインストールする必要があります。',
   'help.contact.title': 'まだお困りですか？',
   'help.contact.content': 'メールでメンテナーに連絡するか、ユーザーグループに参加してください。',
   'help.contact.about': 'WeChat グループの QR コードは「ChiTV について」ページで確認できます',

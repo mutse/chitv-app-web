@@ -271,7 +271,7 @@ export const tw: Record<string, string> = {
   'help.android.tvbox.title': '匯入 TVBox 訂閱',
   'help.android.tvbox.content': '支援匯入 TVBox 訂閱：點播只匯入 type=1 的 CMS 源，直播只匯入 type=0 的 M3U 源；同步時會合併新源，不會刪除已有源。',
   'help.android.update.title': '應用內更新',
-  'help.android.update.content': '應用內更新檢查指向 ChiTV 發布倉庫，有新版本時會提示。',
+  'help.android.update.content': '應用內更新檢查指向 ChiTV 發布倉庫，有新版本時會提示。若目前使用 v0.1.3，需手動安裝最新版本。',
   'help.contact.title': '還需要幫助？',
   'help.contact.content': '可以透過郵件聯絡維護者，或加入用戶群交流。',
   'help.contact.about': '在關於頁查看微信群二維碼',

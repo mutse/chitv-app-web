@@ -271,7 +271,7 @@ export const fr: Record<string, string> = {
   'help.android.tvbox.title': 'Importer un abonnement TVBox',
   'help.android.tvbox.content': 'Lors de l’importation d’un abonnement TVBox, ChiTV importe uniquement les sources CMS de type=1 pour la vidéo à la demande et les sources M3U de type=0 pour le direct. La synchronisation ajoute les nouvelles sources sans supprimer celles qui existent déjà.',
   'help.android.update.title': 'Mises à jour dans l’application',
-  'help.android.update.content': 'La vérification des mises à jour dans l’application pointe vers le dépôt de publication ChiTV et vous prévient quand une nouvelle version est disponible.',
+  'help.android.update.content': 'La vérification des mises à jour dans l’application pointe vers le dépôt de publication ChiTV et vous prévient quand une nouvelle version est disponible. Si vous utilisez la version v0.1.3, vous devez installer manuellement la dernière version.',
   'help.contact.title': 'Besoin d’aide supplémentaire ?',
   'help.contact.content': 'Contactez le mainteneur par e-mail, ou rejoignez un groupe d’utilisateurs.',
   'help.contact.about': 'Voir le QR code du groupe WeChat sur la page À propos',
