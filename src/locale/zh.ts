@@ -179,6 +179,8 @@ export const zh: Record<string, string> = {
   'lang.en': 'English',
   'lang.ja': '日本語',
   'lang.fr': 'Français',
+  'lang.nl': 'Nederlands',
+  'lang.de': 'Deutsch',
   // Accessibility
   'a11y.toggleMenu': '切换菜单',
   'a11y.switchLanguage': '切换语言',

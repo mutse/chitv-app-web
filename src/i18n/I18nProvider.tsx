@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect, type ReactNode } from 'react'
-import type { Locale } from './types'
+import { locales, localeTags, type Locale } from './types'
 
 interface I18nContextType {
   locale: Locale
@@ -13,20 +13,13 @@ export const I18nContext = createContext<I18nContextType>({
 
 export function detectLocale(): Locale {
   const stored = localStorage.getItem('chitv-lang')
-  if (stored === 'zh' || stored === 'tw' || stored === 'en' || stored === 'ja' || stored === 'fr') return stored
+  const savedLocale = locales.find((locale) => locale === stored)
+  if (savedLocale) return savedLocale
+
   const lang = navigator.language.toLowerCase()
   if (lang.startsWith('zh-tw') || lang.startsWith('zh-hk') || lang.startsWith('zh-mo')) return 'tw'
-  if (lang.startsWith('ja')) return 'ja'
-  if (lang.startsWith('fr')) return 'fr'
-  return lang.startsWith('zh') ? 'zh' : 'en'
-}
-
-const htmlLang: Record<Locale, string> = {
-  zh: 'zh-CN',
-  tw: 'zh-TW',
-  en: 'en',
-  ja: 'ja',
-  fr: 'fr',
+  const primary = lang.split('-')[0]
+  return locales.find((locale) => locale !== 'tw' && locale === primary) ?? 'en'
 }
 
 export function I18nProvider({ children }: { children: ReactNode }) {
@@ -38,7 +31,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   }
 
   useEffect(() => {
-    document.documentElement.lang = htmlLang[locale]
+    document.documentElement.lang = localeTags[locale]
   }, [locale])
 
   return (

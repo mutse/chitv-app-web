@@ -1,17 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from '../i18n/useTranslation'
-import type { Locale } from '../i18n/types'
+import { locales } from '../i18n/types'
 import { Globe, Check, ChevronDown } from 'lucide-react'
-
-const localeLabelKey: Record<Locale, string> = {
-  zh: 'lang.zh',
-  tw: 'lang.tw',
-  en: 'lang.en',
-  ja: 'lang.ja',
-  fr: 'lang.fr',
-}
-
-const locales: Locale[] = ['zh', 'tw', 'en', 'ja', 'fr']
 
 export function LanguageSwitcher() {
   const { t, locale, setLocale } = useTranslation()
@@ -44,7 +34,7 @@ export function LanguageSwitcher() {
         className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-text-primary transition-colors duration-300 cursor-pointer"
       >
         <Globe className="w-4 h-4" />
-        <span>{t(localeLabelKey[locale])}</span>
+        <span>{t(`lang.${locale}`)}</span>
         <ChevronDown
           className={`w-3.5 h-3.5 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
         />
@@ -72,7 +62,7 @@ export function LanguageSwitcher() {
                     : 'text-text-secondary hover:text-text-primary hover:bg-black/5'
                 }`}
               >
-                {t(localeLabelKey[item])}
+                {t(`lang.${item}`)}
                 {active && <Check className="w-4 h-4" />}
               </button>
             )

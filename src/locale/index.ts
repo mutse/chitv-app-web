@@ -3,11 +3,13 @@ import { tw } from './tw'
 import { en } from './en'
 import { ja } from './ja'
 import { fr } from './fr'
+import { nl } from './nl'
+import { de } from './de'
 import type { Locale, Translations } from '../i18n/types'
 
-const dicts: Record<Locale, Record<string, string>> = { zh, tw, en, ja, fr }
+const dicts: Record<Locale, Record<string, string>> = { zh, tw, en, ja, fr, nl, de }
 
-// 开发模式下校验五语 key 对齐，缺失时在控制台告警
+// 开发模式下校验各语言 key 对齐，缺失时在控制台告警
 if (import.meta.env.DEV) {
   const zhKeys = new Set(Object.keys(zh))
   for (const locale of Object.keys(dicts) as Locale[]) {
@@ -28,5 +30,7 @@ for (const key of Object.keys(zh)) {
     en: en[key] ?? zh[key],
     ja: ja[key] ?? zh[key],
     fr: fr[key] ?? zh[key],
+    nl: nl[key] ?? zh[key],
+    de: de[key] ?? zh[key],
   }
 }
