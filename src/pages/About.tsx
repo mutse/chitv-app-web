@@ -96,26 +96,38 @@ export function About() {
               {t('about.contact.title')}
             </a>
           </div>
-          <div id="telegram" className="mt-12 inline-flex flex-col items-center gap-3 bg-surface border border-black/10 rounded-2xl px-8 py-6 scroll-mt-24">
-            <img
-              src="/telegram-qr.png"
-              alt="ChiTV Telegram"
-              className="w-40 h-40 rounded-xl"
-              loading="lazy"
-            />
-            <p className="font-semibold">
-              {telegramTitlePrefix}
-              <a
-                href={TELEGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline underline-offset-4 hover:text-primary/80 transition-colors duration-300"
-              >
-                Telegram
-              </a>
-              {telegramTitleSuffix}
-            </p>
-            <p className="text-text-secondary text-sm">{t('about.contact.telegram.desc')}</p>
+          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
+            <div id="telegram" className="inline-flex flex-col items-center gap-3 bg-surface border border-black/10 rounded-2xl px-8 py-6 scroll-mt-24">
+              <img
+                src="/telegram-qr.png"
+                alt="ChiTV Telegram"
+                className="w-40 h-40 rounded-xl"
+                loading="lazy"
+              />
+              <p className="font-semibold">
+                {telegramTitlePrefix}
+                <a
+                  href={TELEGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:text-primary/80 transition-colors duration-300"
+                >
+                  Telegram
+                </a>
+                {telegramTitleSuffix}
+              </p>
+              <p className="text-text-secondary text-sm">{t('about.contact.telegram.desc')}</p>
+            </div>
+            <div id="wechat" className="inline-flex flex-col items-center gap-3 bg-surface border border-black/10 rounded-2xl px-8 py-6 scroll-mt-24">
+              <img
+                src="/wechat-qr.png"
+                alt="ChiTV 微信群"
+                className="w-40 h-40 rounded-xl"
+                loading="lazy"
+              />
+              <p className="font-semibold">{t('about.contact.wechat.title')}</p>
+              <p className="text-text-secondary text-sm">{t('about.contact.wechat.desc')}</p>
+            </div>
           </div>
         </div>
       </section>

@@ -155,6 +155,8 @@ export const fr: Record<string, string> = {
   'about.contact.desc': 'ChiTV est un projet open source, les contributions et les échanges sont les bienvenus.',
   'about.contact.telegram.title': 'Rejoignez le groupe Telegram',
   'about.contact.telegram.desc': 'Scannez le QR code pour rejoindre le groupe d’utilisateurs ChiTV et partager astuces et retours',
+  'about.contact.wechat.title': 'Rejoignez le groupe WeChat',
+  'about.contact.wechat.desc': 'Scannez le QR code pour rejoindre le groupe WeChat ChiTV et partager astuces et retours (QR code valable 7 jours)',
   // Footer
   'footer.support': 'Assistance',
   'footer.changelog': 'Journal des versions',
