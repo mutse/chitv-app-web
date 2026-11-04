@@ -25,6 +25,11 @@ export function Footer() {
               <h3 className="text-sm font-semibold mb-4">{t('footer.support')}</h3>
               <ul className="space-y-2">
                 <li>
+                  <Link to={location.pathname.startsWith('/android') ? '/android/help' : '/help'} className={linkClassName}>
+                    {t('footer.help')}
+                  </Link>
+                </li>
+                <li>
                   <Link to={location.pathname.startsWith('/android') ? '/android/releases' : '/releases'} className={linkClassName}>
                     {t('footer.changelog')}
                   </Link>
