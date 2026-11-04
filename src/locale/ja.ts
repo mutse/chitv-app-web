@@ -262,6 +262,7 @@ export const ja: Record<string, string> = {
   'help.apple.pro.content': '無料版は 1 件のソースを保存できます。ChiTV Pro はソース数無制限で、月額自動更新、年額自動更新、買い切りの 3 種類があり、ソースに関する権利は同じです。デバイスを変更した場合は、アプリ内の「購入の復元」で同じ Apple アカウントの有効な権利を復元できます。',
   'help.android.download.title': 'ダウンロードとインストール',
   'help.android.download.content': 'Android 版は APK 形式で提供され、公式サイトまたは GitHub からダウンロードできます。',
+  'help.android.sources.title': '再生ソース設定',
   'help.android.tvbox.title': 'TVBox サブスクリプションのインポート',
   'help.android.tvbox.content': 'TVBox サブスクリプションのインポートに対応しています。オンデマンドは type=1 の CMS ソースのみ、ライブは type=0 の M3U ソースのみを取り込みます。同期時は新しいソースをマージし、既存のソースを削除しません。',
   'help.android.update.title': 'アプリ内アップデート',

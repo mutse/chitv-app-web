@@ -262,6 +262,7 @@ export const zh: Record<string, string> = {
   'help.apple.pro.content': '免费版可以保存 1 个片源；ChiTV Pro 不限片源数量，提供按月、按年自动续订与一次性买断三种方式，三者权益相同。更换设备后，可在应用内使用“恢复购买”找回同一 Apple 账户的有效权益。',
   'help.android.download.title': '下载与安装',
   'help.android.download.content': 'Android 版提供 APK 安装包，可从官网或 GitHub 下载。',
+  'help.android.sources.title': '播放源设置',
   'help.android.tvbox.title': '导入 TVBox 订阅',
   'help.android.tvbox.content': '支持导入 TVBox 订阅：点播只导入 type=1 的 CMS 源，直播只导入 type=0 的 M3U 源；同步时会合并新源，不会删除已有源。',
   'help.android.update.title': '应用内更新',

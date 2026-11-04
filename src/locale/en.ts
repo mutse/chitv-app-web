@@ -262,6 +262,7 @@ export const en: Record<string, string> = {
   'help.apple.pro.content': 'The free version can save 1 source; ChiTV Pro offers unlimited sources with monthly auto-renewal, yearly auto-renewal, or a one-time lifetime purchase, all with the same source rights. After switching devices, use “Restore Purchases” in the app to recover valid rights for the same Apple account.',
   'help.android.download.title': 'Download & Install',
   'help.android.download.content': 'The Android version is available as an APK, downloadable from the official site or GitHub.',
+  'help.android.sources.title': 'Playback Source Setup',
   'help.android.tvbox.title': 'Import a TVBox Subscription',
   'help.android.tvbox.content': 'TVBox subscriptions are supported: on-demand imports only type=1 CMS sources, live imports only type=0 M3U sources; syncing merges new sources without deleting existing ones.',
   'help.android.update.title': 'In-App Updates',
