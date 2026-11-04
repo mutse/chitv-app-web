@@ -145,6 +145,11 @@ export function Help() {
                 <p className="text-text-secondary leading-relaxed text-lg">
                   {t('help.apple.sources.content')}
                 </p>
+                <ol className="mt-4 list-decimal space-y-2 pl-6 text-text-secondary leading-relaxed text-lg break-words">
+                  {[1, 2, 3].map((n) => (
+                    <li key={n}>{t(`help.apple.sources.step${n}`)}</li>
+                  ))}
+                </ol>
               </div>
               <div>
                 <h2 className="text-2xl font-bold mb-4">{t('help.apple.sync.title')}</h2>
