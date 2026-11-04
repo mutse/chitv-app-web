@@ -9,6 +9,7 @@ import { Home } from './pages/Home'
 import { Features } from './pages/Features'
 import { Android } from './pages/Android'
 import { About } from './pages/About'
+import { Help } from './pages/Help'
 import { Releases } from './pages/Releases'
 import { NotFound } from './pages/NotFound'
 import { Privacy } from './pages/Privacy'
@@ -26,6 +27,8 @@ export function render(url: string): string {
             <Route path="releases" element={<Releases />} />
             <Route path="android/releases" element={<Releases />} />
             <Route path="about" element={<About />} />
+            <Route path="help" element={<Help />} />
+            <Route path="android/help" element={<Help />} />
             <Route path="privacy" element={<Privacy />} />
             <Route path="terms" element={<Terms />} />
             <Route path="*" element={<NotFound />} />
