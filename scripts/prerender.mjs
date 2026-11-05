@@ -33,6 +33,8 @@ const routes = {
   '/about': { file: 'about/index.html', titleKey: 'meta.about.title', descKey: 'meta.about.desc' },
   '/help': { file: 'help/index.html', titleKey: 'meta.help.title.apple', descKey: 'meta.help.desc' },
   '/android/help': { file: 'android/help/index.html', titleKey: 'meta.help.title.android', descKey: 'meta.help.desc' },
+  '/blog': { file: 'blog/index.html', titleKey: 'meta.blog.title.apple', descKey: 'meta.blog.desc' },
+  '/android/blog': { file: 'android/blog/index.html', titleKey: 'meta.blog.title.android', descKey: 'meta.blog.desc' },
   '/privacy': { file: 'privacy/index.html', titleKey: 'meta.privacy.title', descKey: 'meta.privacy.desc' },
   '/terms': { file: 'terms/index.html', titleKey: 'meta.terms.title', descKey: 'meta.terms.desc' },
   // 404 页：Cloudflare Pages 对未知路径以 404 状态 serve dist/404.html（noindex，不被收录）

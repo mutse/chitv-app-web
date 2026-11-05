@@ -9,6 +9,7 @@ const Home = lazy(() => import('./pages/Home').then((m) => ({ default: m.Home })
 const Features = lazy(() => import('./pages/Features').then((m) => ({ default: m.Features })))
 const About = lazy(() => import('./pages/About').then((m) => ({ default: m.About })))
 const Help = lazy(() => import('./pages/Help').then((m) => ({ default: m.Help })))
+const Blog = lazy(() => import('./pages/Blog').then((m) => ({ default: m.Blog })))
 const Android = lazy(() => import('./pages/Android').then((m) => ({ default: m.Android })))
 const NotFound = lazy(() => import('./pages/NotFound').then((m) => ({ default: m.NotFound })))
 const Privacy = lazy(() => import('./pages/Privacy').then((m) => ({ default: m.Privacy })))
@@ -30,6 +31,8 @@ export function App() {
               <Route path="about" element={<About />} />
               <Route path="help" element={<Help />} />
               <Route path="android/help" element={<Help />} />
+              <Route path="blog" element={<Blog />} />
+              <Route path="android/blog" element={<Blog />} />
               <Route path="privacy" element={<Privacy />} />
               <Route path="terms" element={<Terms />} />
               <Route path="*" element={<NotFound />} />
