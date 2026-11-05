@@ -67,8 +67,8 @@ for (const [url, { file, titleKey, descKey, noindex }] of Object.entries(routes)
   if (noindex) {
     html = html.replace('</head>', '  <meta name="robots" content="noindex" />\n</head>')
   }
-  // 首页：可见 FAQ 与 FAQPage 结构化数据保持一致（Google 富摘要 / AI 引用）
-  if (url === '/') {
+  // 首页与帮助页：可见 FAQ 与 FAQPage 结构化数据保持一致（Google 富摘要 / AI 引用）
+  if (url === '/' || url === '/help' || url === '/android/help') {
     const faqJsonLd = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
