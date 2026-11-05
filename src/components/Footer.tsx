@@ -34,6 +34,11 @@ export function Footer() {
                     {t('footer.changelog')}
                   </Link>
                 </li>
+                <li>
+                  <Link to={location.pathname.startsWith('/android') ? '/android/blog' : '/blog'} className={linkClassName}>
+                    {t('footer.blog')}
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>

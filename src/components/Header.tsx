@@ -20,6 +20,7 @@ export function Header() {
     { to: '/', label: t('nav.home') },
     { to: '/features', label: t('nav.features') },
     { to: '/android', label: t('nav.android') },
+    { to: location.pathname.startsWith('/android') ? '/android/blog' : '/blog', label: t('nav.blog') },
     { to: '/about', label: t('nav.about') },
   ]
 

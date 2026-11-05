@@ -13,6 +13,7 @@ export function PlatformSwitcher() {
   const location = useLocation()
   const isReleases = /\/releases\/?$/.test(location.pathname)
   const isHelp = /\/help\/?$/.test(location.pathname)
+  const isBlog = /\/blog\/?$/.test(location.pathname)
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -73,7 +74,7 @@ export function PlatformSwitcher() {
               return (
                 <Link
                   key={platform.to}
-                  to={isReleases ? (platform.label === 'Android' ? '/android/releases' : '/releases') : isHelp ? (platform.label === 'Android' ? '/android/help' : '/help') : platform.to}
+                  to={isReleases ? (platform.label === 'Android' ? '/android/releases' : '/releases') : isHelp ? (platform.label === 'Android' ? '/android/help' : '/help') : isBlog ? (platform.label === 'Android' ? '/android/blog' : '/blog') : platform.to}
                   role="menuitem"
                   onClick={() => setOpen(false)}
                   className={`block w-full rounded-lg px-4 py-2 text-left text-sm transition-colors duration-300 ${

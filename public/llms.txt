@@ -70,12 +70,14 @@ iOS 版已上架 App Store；Android 版点击官网下载按钮获取（官网�
 - 服务条款: https://chitv.fit/terms/
 - 发布日志: https://chitv.fit/releases/（Apple）、https://chitv.fit/android/releases/（Android）
 - 帮助: https://chitv.fit/help/（Apple）、https://chitv.fit/android/help/（Android），按导航栏平台切换显示对应版本
+- 博客: https://chitv.fit/blog/（Apple）、https://chitv.fit/android/blog/（Android），按导航栏平台切换显示对应版本
 - 安卓版设置指南（视频源、直播源）: https://chitv.fit/android/
 - GitHub（发布仓库）: https://github.com/mutse/chitv-app
 - Twitter: https://x.com/chitvapp
 - 联系邮箱: hi@chitv.fit
 
 ## 更新记录
+- 2026-11-05：新增博客页面（/blog 与 /android/blog，导航栏与页脚支持栏按 Apple/Android 切换）
 - 2026-11-05：新增德语、荷兰语界面，官网支持七语切换；FAQ 明确 App 语言为简体中文、繁體中文、English 三语
 - 2026-11-04：新增帮助页面（/help 与 /android/help，导航栏 Apple/Android 切换对应版本；Apple 版含下载、片源、同步与 Pro 说明，Android 版含下载、片源与直播源指南、TVBox 订阅与应用内更新）
 - 2026-11-03：新增法语界面，官网支持简体中文、繁體中文、English、日本語、Français 五语切换
