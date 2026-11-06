@@ -55,6 +55,7 @@ export const zh: Record<string, string> = {
   'releases.android.015.1': 'feat: TVBox 配置导入与订阅记忆',
   'releases.android.015.2': 'fix: 直播 M3U 误判修复与单流支持',
   'releases.android.015.3': 'fix: 直播单流判定不再仅凭正数 EXTINF 时长',
+  'releases.android.015.4': '修复检查更新失败问题',
   // Nav
   'nav.home': '首页',
   'nav.features': '产品特性',

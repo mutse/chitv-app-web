@@ -55,6 +55,7 @@ export const en: Record<string, string> = {
   'releases.android.015.1': 'feat: Import TVBox configurations and remember subscriptions',
   'releases.android.015.2': 'fix: Fix live M3U playlist misclassification and support single live streams',
   'releases.android.015.3': 'fix: A positive EXTINF duration alone no longer identifies a single live stream',
+  'releases.android.015.4': 'Fixed an issue that caused update checks to fail',
   // Nav
   'nav.home': 'Home',
   'nav.features': 'Features',

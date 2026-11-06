@@ -55,6 +55,7 @@ export const ja: Record<string, string> = {
   'releases.android.015.1': 'feat: TVBox 設定のインポートと購読情報の保存に対応',
   'releases.android.015.2': 'fix: ライブ配信の M3U プレイリストの誤判定を修正し、単一ストリームに対応',
   'releases.android.015.3': 'fix: EXTINF の再生時間が正の値であることだけでは、単一のライブストリームと判定しない',
+  'releases.android.015.4': 'アップデートの確認に失敗する問題を修正',
   // Nav
   'nav.home': 'ホーム',
   'nav.features': '機能',

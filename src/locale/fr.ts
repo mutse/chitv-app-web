@@ -55,6 +55,7 @@ export const fr: Record<string, string> = {
   'releases.android.015.1': 'feat: importation des configurations TVBox et mémorisation des abonnements',
   'releases.android.015.2': 'fix: correction de la détection des listes M3U pour le direct et prise en charge des flux uniques',
   'releases.android.015.3': 'fix: une durée EXTINF positive ne suffit plus à identifier un flux en direct unique',
+  'releases.android.015.4': 'Correction d’un problème qui faisait échouer la recherche de mises à jour',
   // Nav
   'nav.home': 'Accueil',
   'nav.features': 'Fonctionnalités',

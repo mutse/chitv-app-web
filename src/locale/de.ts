@@ -55,6 +55,7 @@ export const de: Record<string, string> = {
   'releases.android.015.1': "feat: TVBox-Konfigurationen importieren und Abonnements merken",
   'releases.android.015.2': "fix: M3U-Wiedergabelisten für Live-TV werden korrekt erkannt; einzelne Livestreams werden unterstützt",
   'releases.android.015.3': "fix: Eine positive EXTINF-Dauer allein reicht nicht mehr aus, um eine Quelle als einzelnen Livestream einzustufen",
+  'releases.android.015.4': 'Ein Problem wurde behoben, durch das die Suche nach Updates fehlschlug',
   // Nav
   'nav.home': "Startseite",
   'nav.features': "Funktionen",
