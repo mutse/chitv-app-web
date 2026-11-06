@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
+import { Download, Github, Smartphone } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
 import { PageMeta } from '../components/PageMeta'
 import { CONTACT_EMAIL, TELEGRAM_URL, DOWNLOAD_URLS } from '../config'
@@ -6,7 +7,8 @@ import { CONTACT_EMAIL, TELEGRAM_URL, DOWNLOAD_URLS } from '../config'
 // 帮助页：与 Releases 同款平台判定——/android/help 显示 Android 版，其余显示 Apple 版。
 // 导航栏的 Apple/Android 切换在帮助页上会在 /help 与 /android/help 之间跳转（见 PlatformSwitcher）。
 // 布局参考 mole.fit/zh/help 的文档式排版：左对齐文档标题 + 左侧锚点目录 + 右侧中窄栏正文，
-// 章节靠字号与留白分层；步骤用缩进数字列表，FAQ 全部展开，链接用蓝色文字（不做卡片与折叠）。
+// 章节靠字号与留白分层；步骤用缩进数字列表，FAQ 全部展开，链接用蓝色文字（不做卡片与折叠）；
+// 下载链接例外，用首页 Hero 同款圆角胶囊主按钮。
 export function Help() {
   const { t } = useTranslation()
   const { pathname } = useLocation()
@@ -33,6 +35,10 @@ export function Help() {
 
   const linkClassName =
     'text-primary underline underline-offset-4 hover:text-primary/80 transition-colors duration-300'
+
+  // 下载按钮：与首页 Hero 同款（圆角胶囊主按钮 + 平台图标 + 下载图标）
+  const downloadButtonClassName =
+    'inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-medium px-7 py-[13px] rounded-full min-w-[158px] transition-all duration-300 hover:-translate-y-px'
 
   return (
     <>
@@ -73,19 +79,23 @@ export function Help() {
                   <p className="text-text-secondary leading-relaxed text-lg">
                     {t('help.android.download.content')}
                   </p>
-                  <p className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
-                    <a href={DOWNLOAD_URLS.android} className={linkClassName}>
+                  <div className="mt-6 flex flex-col sm:flex-row sm:flex-wrap gap-4">
+                    <a href={DOWNLOAD_URLS.android} className={downloadButtonClassName}>
+                      <Smartphone className="w-5 h-5" />
+                      <Download className="w-4 h-4" />
                       {t('android.cta.official')}
                     </a>
                     <a
                       href={DOWNLOAD_URLS.androidGithub}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={linkClassName}
+                      className={downloadButtonClassName}
                     >
+                      <Github className="w-5 h-5" />
+                      <Download className="w-4 h-4" />
                       {t('android.cta.github')}
                     </a>
-                  </p>
+                  </div>
                 </section>
 
                 <section id="sources" className="scroll-mt-24">
@@ -135,16 +145,18 @@ export function Help() {
                   <p className="text-text-secondary leading-relaxed text-lg">
                     {t('help.apple.download.content')}
                   </p>
-                  <p className="mt-4">
+                  <div className="mt-6 flex flex-col sm:flex-row sm:flex-wrap gap-4">
                     <a
                       href={DOWNLOAD_URLS.ios}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={linkClassName}
+                      className={downloadButtonClassName}
                     >
+                      <Smartphone className="w-5 h-5" />
+                      <Download className="w-4 h-4" />
                       {t('cta.ios')}
                     </a>
-                  </p>
+                  </div>
                 </section>
 
                 <section id="sources" className="scroll-mt-24">
