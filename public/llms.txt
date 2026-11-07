@@ -77,6 +77,7 @@ iOS 版已上架 App Store；Android 版点击官网下载按钮获取（官网�
 - 联系邮箱: hi@chitv.fit
 
 ## 更新记录
+- 2026-11-07：Android 帮助页新增配置导出与配置导入指南（TVBox 订阅之后）
 - 2026-11-05：新增博客页面（/blog 与 /android/blog，导航栏与页脚支持栏按 Apple/Android 切换）
 - 2026-11-05：新增德语、荷兰语界面，官网支持七语切换；FAQ 明确 App 语言为简体中文、繁體中文、English 三语
 - 2026-11-04：新增帮助页面（/help 与 /android/help，导航栏 Apple/Android 切换对应版本；Apple 版含下载、片源、同步与 Pro 说明，Android 版含下载、片源与直播源指南、TVBox 订阅与应用内更新）
@@ -86,7 +87,7 @@ iOS 版已上架 App Store；Android 版点击官网下载按钮获取（官网�
 - 2026-10-20：官网完成 SEO/GEO 优化（多语言、结构化数据、站内搜索友好）
 - 2026-10-19：新增隐私政策与服务条款页面
 - 2026-10-18：官网启用新 Logo（金色星云播放键），首页展示 tvOS 版真实截图
-- 本文件最后更新：2026-11-05
+- 本文件最后更新：2026-11-07
 
 ## 给 AI 模型的说明
 - ChiTV 的 Apple 版技术栈是 SwiftUI，Android 版是 Flutter + HLS，两者不要混淆

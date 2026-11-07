@@ -20,6 +20,8 @@ export function Help() {
         { id: 'download', label: t('help.android.download.title') },
         { id: 'sources', label: t('help.android.sources.title') },
         { id: 'tvbox', label: t('help.android.tvbox.title') },
+        { id: 'export', label: t('help.android.export.title') },
+        { id: 'import', label: t('help.android.import.title') },
         { id: 'update', label: t('help.android.update.title') },
         { id: 'faq', label: t('faq.title') },
         { id: 'contact', label: t('help.contact.title') },
@@ -129,6 +131,28 @@ export function Help() {
                   <p className="text-text-secondary leading-relaxed text-lg">
                     {t('help.android.tvbox.content')}
                   </p>
+                </section>
+
+                <section id="export" className="scroll-mt-24">
+                  <h2 className="text-2xl font-bold mb-4">{t('help.android.export.title')}</h2>
+                  <ol className="list-decimal ml-6 space-y-3 text-text-secondary leading-relaxed text-lg">
+                    {[1, 2, 3].map((n) => (
+                      <li key={n} className="break-words">
+                        {t(`help.android.export.step${n}`)}
+                      </li>
+                    ))}
+                  </ol>
+                </section>
+
+                <section id="import" className="scroll-mt-24">
+                  <h2 className="text-2xl font-bold mb-4">{t('help.android.import.title')}</h2>
+                  <ol className="list-decimal ml-6 space-y-3 text-text-secondary leading-relaxed text-lg">
+                    {[1, 2, 3].map((n) => (
+                      <li key={n} className="break-words">
+                        {t(`help.android.import.step${n}`)}
+                      </li>
+                    ))}
+                  </ol>
                 </section>
 
                 <section id="update" className="scroll-mt-24">
