@@ -14,7 +14,7 @@ export const PROJECT_GITHUB_URL = 'https://github.com/mutse/chitv-app'
 export const CONTACT_EMAIL = 'hi@chitv.fit'
 
 export const TWITTER_URL = 'https://x.com/chitvapp'
-export const TELEGRAM_URL = 'https://t.me/+eiCvvlxhyzowMDJh'
+export const TELEGRAM_URL = 'https://t.me/chitv_app'
 
 export const DOWNLOAD_URLS = {
   ios: 'https://apps.apple.com/app/chitv-%E6%92%AD%E6%94%BE%E5%99%A8/id6823914003',
