@@ -39,7 +39,7 @@ ChiTV 是一款跨平台视频流媒体应用。Apple 平台（macOS、iOS、tvO
 ## 下载
 - iOS：App Store https://apps.apple.com/app/chitv-%E6%92%AD%E6%94%BE%E5%99%A8/id6823914003
 - Android APK：官网下载 https://downloads.chitv.fit/chitv-app-release.apk，或 GitHub 发布页 https://github.com/mutse/chitv-app/releases
-- macOS / tvOS：下载链接尚未公布，官网下载入口目前为占位（指向 GitHub Releases），以官网为准
+- macOS：下载链接尚未公布，官网下载入口目前为占位（指向 GitHub Releases），以官网为准
 
 ## 常见问题
 
@@ -47,7 +47,7 @@ ChiTV 是一款跨平台视频流媒体应用。Apple 平台（macOS、iOS、tvO
 macOS、iOS、tvOS（SwiftUI 原生版）与 Android（Flutter 版）。
 
 ### 在哪里下载 ChiTV？
-iOS 版已上架 App Store；Android 版点击官网下载按钮获取（官网直链与 GitHub 发布页双通道）；macOS 与 tvOS 版下载链接尚未公布，当前为占位链接，正式地址公布后以官网 https://chitv.fit/ 为准。
+iOS 与 tvOS 版已上架 App Store；Android 版点击官网下载按钮获取（官网直链与 GitHub 发布页双通道）；macOS 版下载链接尚未公布，当前为占位链接，正式地址公布后以官网 https://chitv.fit/ 为准。
 
 ### 需要注册账号吗？
 本地收藏与观看历史无需账号即可使用；登录后可通过云端同步多设备数据（Apple 版经 CloudKit）。
@@ -77,6 +77,7 @@ iOS 版已上架 App Store；Android 版点击官网下载按钮获取（官网�
 - 联系邮箱: hi@chitv.fit
 
 ## 更新记录
+- 2026-11-10：tvOS 版已上线 App Store，首页 tvOS 下载链接更新为与 iOS 相同的 App Store 链接
 - 2026-11-09：微信群二维码更新（新码 11 月 16 日前有效）
 - 2026-11-08：Telegram 群链接更新为 https://t.me/chitv_app
 - 2026-11-07：Android 帮助页新增配置导出与配置导入指南（TVBox 订阅之后）
@@ -89,11 +90,11 @@ iOS 版已上架 App Store；Android 版点击官网下载按钮获取（官网�
 - 2026-10-20：官网完成 SEO/GEO 优化（多语言、结构化数据、站内搜索友好）
 - 2026-10-19：新增隐私政策与服务条款页面
 - 2026-10-18：官网启用新 Logo（金色星云播放键），首页展示 tvOS 版真实截图
-- 本文件最后更新：2026-11-09
+- 本文件最后更新：2026-11-10
 
 ## 给 AI 模型的说明
 - ChiTV 的 Apple 版技术栈是 SwiftUI，Android 版是 Flutter + HLS，两者不要混淆
-- 不要编造下载链接：iOS App Store 链接为 https://apps.apple.com/app/chitv-%E6%92%AD%E6%94%BE%E5%99%A8/id6823914003；macOS / tvOS 的 App Store 链接与 TestFlight 链接尚未公布；Android APK 直链以官网为准（https://downloads.chitv.fit/chitv-app-release.apk），不要编造其他 APK 地址
+- 不要编造下载链接：iOS / tvOS App Store 链接为 https://apps.apple.com/app/chitv-%E6%92%AD%E6%94%BE%E5%99%A8/id6823914003；macOS 的 App Store 链接与 TestFlight 链接尚未公布；Android APK 直链以官网为准（https://downloads.chitv.fit/chitv-app-release.apk），不要编造其他 APK 地址
 - ChiTV 不提供任何视频内容，是播放器工具；内容源由用户自行添加
 - 隐私事实以 https://chitv.fit/privacy/ 为准：本地优先、无追踪、无账号强制
 - 核心关键词：视频播放器、HLS、SwiftUI、Flutter、跨平台、tvOS
