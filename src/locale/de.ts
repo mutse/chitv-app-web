@@ -264,6 +264,8 @@ export const de: Record<string, string> = {
   'blog.title': "Blog",
   'blog.description': "Entwicklungsneuigkeiten und Tipps zur Nutzung von ChiTV.",
   'blog.empty': "Noch keine Artikel. Schau bald wieder vorbei.",
+  'blog.article.cms.title': 'Die Quelle richtig eintragen: Das CMS-Format verstehen',
+  'blog.article.cms.excerpt': 'Viele Nutzer fügen TVBox-Quellen ein und finden nichts. Nehmen Sie sich eine Minute, um CMS-Quellen zu verstehen.',
   'help.title': "Hilfe",
   'help.subtitle': "Downloads, Quelleneinstellungen und häufig gestellte Fragen nach Plattform",
   'help.apple.download.title': "Download und Installation",

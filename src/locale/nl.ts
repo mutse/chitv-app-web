@@ -264,6 +264,8 @@ export const nl: Record<string, string> = {
   'blog.title': "Blog",
   'blog.description': "Ontwikkelingsupdates en tips voor het gebruik van ChiTV.",
   'blog.empty': "Nog geen artikelen. Kom binnenkort terug.",
+  'blog.article.cms.title': 'Vul de bron correct in: begrijp het CMS-formaat',
+  'blog.article.cms.excerpt': 'Veel gebruikers plakken TVBox-bronnen in zonder resultaat. Neem een minuut om CMS-bronnen te begrijpen.',
   'help.title': "Hulp",
   'help.subtitle': "Downloads, broninstellingen en veelgestelde vragen per platform",
   'help.apple.download.title': "Downloaden en installeren",
