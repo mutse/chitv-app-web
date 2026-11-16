@@ -264,6 +264,8 @@ export const ja: Record<string, string> = {
   'blog.title': 'ブログ',
   'blog.description': 'ChiTV の開発の進捗と使い方のコツをお届けします。',
   'blog.empty': 'まだ記事がありません。お楽しみに。',
+  'blog.article.cms.title': 'ソースを正しく入力し、CMS 形式を確認しよう',
+  'blog.article.cms.excerpt': 'TVBox のソースを貼り付けても検索できない方が多くいます。まず 1 分で CMS ソースについて知りましょう。',
   'help.title': 'ヘルプ',
   'help.subtitle': 'プラットフォーム別にダウンロード、ソース設定、よくある質問を確認できます',
   'help.apple.download.title': 'ダウンロードとインストール',

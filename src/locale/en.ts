@@ -264,6 +264,8 @@ export const en: Record<string, string> = {
   'blog.title': 'Blog',
   'blog.description': 'Development updates and tips for using ChiTV.',
   'blog.empty': 'No articles yet. Stay tuned.',
+  'blog.article.cms.title': 'Get the Source Right: Understanding the CMS Format',
+  'blog.article.cms.excerpt': 'Many users paste in TVBox sources and get no results. Take a minute to understand CMS sources.',
   'help.title': 'Help',
   'help.subtitle': 'Find downloads, source setup and FAQs by platform',
   'help.apple.download.title': 'Download & Install',
