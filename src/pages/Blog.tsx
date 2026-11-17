@@ -1,10 +1,10 @@
 import { localeTags } from '../i18n/types'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { PageMeta } from '../components/PageMeta'
 import { useTranslation } from '../i18n/useTranslation'
 
 // 博客：与更新日志同款双路由（/blog 与 /android/blog），按导航栏平台切换显示对应版本。
-// 文章按更新日志的卡片列表方式呈现：标题 + 日期 + 正文。
+// 文章只在 Apple 博客（/blog）呈现；Android 博客（/android/blog）暂无文章，恢复占位空态 + 更新日志入口。
 export function Blog() {
   const { t, locale } = useTranslation()
   const { pathname } = useLocation()
@@ -22,6 +22,17 @@ export function Blog() {
           <p className="text-primary font-medium mb-3">{platform}</p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">{t('blog.title')}</h1>
           <p className="text-text-secondary text-lg mb-12">{t('blog.description')}</p>
+          {android ? (
+            <>
+              <p className="text-text-secondary leading-relaxed text-lg">{t('blog.empty')}</p>
+              <Link
+                to="/android/releases"
+                className="inline-block mt-6 text-primary underline underline-offset-4 hover:text-primary/80 transition-colors"
+              >
+                {t('footer.changelog')}
+              </Link>
+            </>
+          ) : (
           <div className="space-y-8">
             <article className="rounded-2xl border border-black/10 bg-surface p-6 sm:p-8">
               <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
@@ -105,6 +116,7 @@ export function Blog() {
               </div>
             </article>
           </div>
+          )}
         </div>
       </section>
     </>
