@@ -1,20 +1,19 @@
 import { useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
-import { IosShowcase } from './IosShowcase'
+import { AppleShowcase } from './AppleShowcase'
+
+const platforms = [
+  { id: 'tvos', label: 'tvOS' },
+  { id: 'ios', label: 'iOS' },
+] as const
 
 export function ScreenshotCarousel() {
-  const { t, locale } = useTranslation()
-  // 海报按界面语言切换：简/繁用中文版，英文用英文版
-  const lang = locale === 'en' ? 'en' : 'zh'
-  const screenshots = [
-    { platform: 'tvOS', src: `/screenshots/appletv-${lang}.jpg` },
-    { platform: 'iOS' },
-  ]
+  const { t } = useTranslation()
   const [active, setActive] = useState(0)
   const touchStart = useRef<number | null>(null)
   const move = (direction: number) => {
-    setActive((current) => (current + direction + screenshots.length) % screenshots.length)
+    setActive((current) => (current + direction + platforms.length) % platforms.length)
   }
 
   return (
@@ -41,17 +40,17 @@ export function ScreenshotCarousel() {
           <ChevronLeft className="h-5 w-5" />
         </button>
         <div className="flex gap-2">
-          {screenshots.map((screenshot, index) => (
+          {platforms.map(({ id, label }, index) => (
             <button
-              key={screenshot.platform}
+              key={id}
               type="button"
               onClick={() => setActive(index)}
               aria-pressed={active === index}
-              aria-label={`${t('hero.screenshots')} · ${screenshot.platform}`}
+              aria-label={`${t('hero.screenshots')} · ${label}`}
               className={`flex min-h-11 items-center gap-2 rounded-full px-3 text-sm font-medium transition-colors ${active === index ? 'bg-primary/10 text-text-primary' : 'text-text-secondary hover:bg-black/5'}`}
             >
               <span aria-hidden="true" className={`h-2 w-2 rounded-full ${active === index ? 'bg-primary' : 'bg-black/20'}`} />
-              {screenshot.platform}
+              {label}
             </button>
           ))}
         </div>
@@ -80,26 +79,14 @@ export function ScreenshotCarousel() {
           className="flex transition-transform duration-500 ease-in-out motion-reduce:transition-none"
           style={{ transform: `translateX(-${active * 100}%)` }}
         >
-          {screenshots.map((screenshot, index) => (
+          {platforms.map(({ id }, index) => (
             <div
-              key={screenshot.platform}
+              key={id}
               className="flex w-full shrink-0 items-center justify-center"
               aria-hidden={active !== index}
               inert={active !== index}
             >
-              {screenshot.src ? (
-                <figure className="flex h-[22rem] w-full items-center justify-center sm:h-[28rem]">
-                  <img
-                    src={screenshot.src}
-                    alt={`ChiTV ${screenshot.platform}`}
-                    className="max-h-full max-w-full w-auto h-auto rounded-2xl border border-black/10 shadow-lg"
-                    loading="eager"
-                    draggable={false}
-                  />
-                </figure>
-              ) : (
-                <IosShowcase visible={active === index} />
-              )}
+              <AppleShowcase platform={id} visible={active === index} />
             </div>
           ))}
         </div>
