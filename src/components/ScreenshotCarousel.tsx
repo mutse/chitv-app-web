@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useTranslation } from '../i18n/useTranslation'
+import { IosShowcase } from './IosShowcase'
 
 export function ScreenshotCarousel() {
   const { t, locale } = useTranslation()
@@ -8,7 +9,7 @@ export function ScreenshotCarousel() {
   const lang = locale === 'en' ? 'en' : 'zh'
   const screenshots = [
     { platform: 'tvOS', src: `/screenshots/appletv-${lang}.jpg` },
-    { platform: 'iOS', src: `/screenshots/iphone-${lang}.jpg` },
+    { platform: 'iOS' },
   ]
   const [active, setActive] = useState(0)
   const touchStart = useRef<number | null>(null)
@@ -30,40 +31,7 @@ export function ScreenshotCarousel() {
       }}
     >
       <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-2xl pointer-events-none" />
-      <div
-        className="relative overflow-hidden rounded-2xl touch-pan-y"
-        onTouchStart={(event) => { touchStart.current = event.touches[0].clientX }}
-        onTouchCancel={() => { touchStart.current = null }}
-        onTouchEnd={(event) => {
-          if (touchStart.current !== null) {
-            const distance = event.changedTouches[0].clientX - touchStart.current
-            if (Math.abs(distance) > 50) move(distance < 0 ? 1 : -1)
-          }
-          touchStart.current = null
-        }}
-      >
-        <div
-          className="flex transition-transform duration-500 ease-in-out motion-reduce:transition-none"
-          style={{ transform: `translateX(-${active * 100}%)` }}
-        >
-          {screenshots.map((screenshot, index) => (
-            <figure
-              key={screenshot.platform}
-              className="flex w-full shrink-0 items-center justify-center h-[22rem] sm:h-[28rem]"
-              aria-hidden={active !== index}
-            >
-              <img
-                src={screenshot.src}
-                alt={`ChiTV ${screenshot.platform}`}
-                className="max-w-full max-h-full w-auto h-auto rounded-2xl border border-black/10 shadow-lg"
-                loading="eager"
-                draggable={false}
-              />
-            </figure>
-          ))}
-        </div>
-      </div>
-      <div className="relative mt-5 flex items-center justify-center gap-5">
+      <div className="relative mb-5 flex items-center justify-center gap-5">
         <button
           type="button"
           onClick={() => move(-1)}
@@ -95,6 +63,46 @@ export function ScreenshotCarousel() {
         >
           <ChevronRight className="h-5 w-5" />
         </button>
+      </div>
+      <div
+        className="relative overflow-hidden rounded-2xl touch-pan-y"
+        onTouchStart={(event) => { touchStart.current = event.touches[0].clientX }}
+        onTouchCancel={() => { touchStart.current = null }}
+        onTouchEnd={(event) => {
+          if (touchStart.current !== null) {
+            const distance = event.changedTouches[0].clientX - touchStart.current
+            if (Math.abs(distance) > 50) move(distance < 0 ? 1 : -1)
+          }
+          touchStart.current = null
+        }}
+      >
+        <div
+          className="flex transition-transform duration-500 ease-in-out motion-reduce:transition-none"
+          style={{ transform: `translateX(-${active * 100}%)` }}
+        >
+          {screenshots.map((screenshot, index) => (
+            <div
+              key={screenshot.platform}
+              className="flex w-full shrink-0 items-center justify-center"
+              aria-hidden={active !== index}
+              inert={active !== index}
+            >
+              {screenshot.src ? (
+                <figure className="flex h-[22rem] w-full items-center justify-center sm:h-[28rem]">
+                  <img
+                    src={screenshot.src}
+                    alt={`ChiTV ${screenshot.platform}`}
+                    className="max-h-full max-w-full w-auto h-auto rounded-2xl border border-black/10 shadow-lg"
+                    loading="eager"
+                    draggable={false}
+                  />
+                </figure>
+              ) : (
+                <IosShowcase visible={active === index} />
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
