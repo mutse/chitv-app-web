@@ -9,14 +9,25 @@ import { fileURLToPath } from 'node:url'
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const dist = join(root, 'dist')
 
-// I18nProvider 的 detectLocale 会读 localStorage / navigator，Node 下兜底
-globalThis.localStorage ??= { getItem: () => null, setItem: () => {}, removeItem: () => {} }
-globalThis.navigator ??= { language: 'zh-CN' }
+// I18nProvider 的 detectLocale 会读 localStorage / navigator，Node 下强制中文。
+// 注意：Node 24 自带只读 navigator（language 为 en-US），??= 与直接赋值都覆盖不了，
+// 必须用 Object.defineProperty，否则 detectLocale 读到英文、正文预渲染成英文，
+// 与中文 head 错配（2026-11-28 实测：线上 HTML lang=zh-CN、标题中文，但 H1 与正文全是英文）。
+globalThis.localStorage = { getItem: () => null, setItem: () => {}, removeItem: () => {} }
+Object.defineProperty(globalThis, 'navigator', {
+  value: { language: 'zh-CN' },
+  writable: true,
+  configurable: true,
+})
 
 const { render } = await import(join(root, 'dist-ssr', 'entry-prerender.js'))
 
 const SITE = 'https://chitv.fit'
 const template = readFileSync(join(dist, 'index.html'), 'utf8')
+
+// JSON-LD SoftwareApplication 描述：模板是 SwiftUI 通用版，Android 页须用 Flutter 版，
+// 否则结构化数据与页面内容不符（AI / 搜索引擎读到错误的 Android 技术栈）。
+const ANDROID_JSONLD_DESC = '基于 Flutter 构建的 Android 视频流媒体应用，支持多源聚合搜索、豆瓣推荐、HLS 播放、直播 M3U/XMLTV 等功能。'
 
 // 从 src/locale/zh.ts 解析中文 meta 文案，与客户端 PageMeta 共用同一数据源
 const zhSrc = readFileSync(join(root, 'src/locale/zh.ts'), 'utf8')
@@ -66,6 +77,17 @@ for (const [url, { file, titleKey, descKey, noindex }] of Object.entries(routes)
     .replace(/(<link rel="canonical" href=").*?(" \/>)/, noindex ? `$1${pageUrl}$2` : `$1${pageUrl}$2\n  ${hreflang}`)
     .replace(/(<meta name="twitter:title" content=").*?(" \/>)/, `$1${title}$2`)
     .replace(/(<meta name="twitter:description" content=").*?(" \/>)/, `$1${desc}$2`)
+  // JSON-LD SoftwareApplication：url 按页面区分；Android 页描述换 Flutter 版
+  html = html.replace(
+    /("url":\s*")https:\/\/chitv\.fit\/(",\s*\n\s*"author")/,
+    `$1${pageUrl}$2`
+  )
+  if (url === '/android' || url.startsWith('/android/')) {
+    html = html.replace(
+      /("description":\s*")[^"]*(",\s*\n\s*"inLanguage")/,
+      `$1${ANDROID_JSONLD_DESC}$2`
+    )
+  }
   if (noindex) {
     html = html.replace('</head>', '  <meta name="robots" content="noindex" />\n</head>')
   }
